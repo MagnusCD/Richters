@@ -84,6 +84,7 @@
     
 </div>
 
+<main class="site-main">
 
 <div class="om-richters-container">
     <br>
@@ -111,7 +112,8 @@
     <div class="box two">
         <h2>Turen</h2>
         <p>
-            <br>På vores ture besøger man den gamle Apotekerkælder, der er byens største og flottest bevarede kælder. Vi er de eneste, der kan tilbyde besøg i denne fredede store flotte unikke middelalderkælder (vi besøger normalt også et par baggårde i nogle fredede ejendomme, hvor der ikke er offentlig adgang). Vores ture er udover en masse historik om de gamle huse også med farverige historier om gamle familier, bysbørn, politik mm. <br><br> Varighed ca. 1,5t <br><br>
+            <br>På vores ture besøger man den gamle Apotekerkælder, der er byens største og flottest bevarede kælder. Vi er de eneste, der kan tilbyde besøg i denne fredede store flotte unikke middelalderkælder (vi besøger normalt også et par baggårde i nogle fredede ejendomme, hvor der ikke er offentlig adgang). Vores ture er udover en masse historik om de gamle huse også med farverige historier om gamle familier, bysbørn, politik mm. <br><br> Varighed ca. 1,5t
+            
         </p>
         <br><br><br><br>
     </div>
@@ -129,10 +131,10 @@
 </div>
 </center>
 
-<main class="site-main">
+<div class="nyheder-container">
     <center><h1>Nyheder</h1></center>
-    <div class="container">
-        <section class="post-list">
+    <div class="posts-container">
+        <section class="posts-list">
             {{ range .Paginator.Pages }}
             <article class="single-post border-bottom pb-4">
                 <h2 class="entry-title mb-4">
@@ -162,9 +164,10 @@
             <div class="pt-4">
                 {{ template "_internal/pagination.html" . }}
             </div>
+        
         </section>
-    </div>   
-</main>
+    </div>
+</div>
 
 <center>
 <div class="slideshow-container">
@@ -218,6 +221,8 @@
 </div>
 </center>
 
+</main>
+
 <div class="push"></div>
 
 </div>
@@ -241,10 +246,9 @@
         </div>
     </div>
 </footer>
-
-</div>
-
 </body>
+
+
 <script>
     $(window).resize(function () {
         var viewportWidth = $(window).width();
