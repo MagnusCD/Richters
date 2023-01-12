@@ -1,0 +1,8 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Richters Ølstue'
+paginate = 3
+summaryLength = 40
+
+[params]
+dateFormat = "2. Jan, 2006"
