@@ -21,13 +21,14 @@
 }
 
 .box p {
-  color: black;
+  color: rgb(255, 255, 255);
+  background-color: #0000009c;
 }
 
 .box h2 {
-  color: black;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
 
 .box  {
   background-color: rgba(255, 255, 255, 0.6);
@@ -46,8 +47,9 @@
   grid-column: 1/1;
   grid-row: 2/2;
   background-image: url("/images/byvandring-img.jpg");
+  background-image: url("/blog/static/images/byvandring-img.jpg");
   background-attachment: fixed;
-  background-position: left;
+  background-position: left 0;
 }
 
 .two {
@@ -55,8 +57,9 @@
   grid-row: 2/2;
   background-color: rgba(255, 255, 255, 0.6);
   background-image: url("/images/byvandring-img.jpg");
+  background-image: url("/blog/static/images/byvandring-img.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: center 0;
 }
 
 .three {
@@ -64,8 +67,9 @@
   grid-row: 2/2;
   background-color: rgba(255, 255, 255, 0.6);
   background-image: url("/images/byvandring-img.jpg");
+  background-image: url("/blog/static/images/byvandring-img.jpg");
   background-attachment: fixed;
-  background-position: right;
+  background-position: right 0;
 }
 
 .site-main /*NYHEDER*/ {
