@@ -38,10 +38,9 @@
 .box p {
   color: rgb(255, 255, 255);
   background-color: #0000009c;
-  height: 400px;
+  height: 420px;
   margin-right: 2vw;
   margin-left: 2vw;
-  padding-bottom: 10px;
 }
 
 .box h2 {
