@@ -106,6 +106,8 @@
   background-color: rgba(255, 255, 255, 0.6);
   padding-bottom: 25px;
   padding-top: 25px;
+  
+  padding-left: 10px;
 
   display: flex;
   justify-content: center;
