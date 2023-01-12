@@ -179,6 +179,7 @@ h3 {
     width: 100%;
     z-index: 3;
     transition: background .5s ease-out;
+    box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
     }
 }
 
@@ -463,7 +464,7 @@ h3 {
 
 .wrapper {
     min-height: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 400px;
     overflow: hidden;
 }
 
