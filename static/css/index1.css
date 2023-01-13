@@ -155,7 +155,8 @@
     margin-top: 100px;
   }
   .grid-container-byvandring h1 {
-    margin-bottom: -10px
+    margin-bottom: -20px;
+    padding-top: 20px;
   }
   .box p {
     background-color: rgba(0, 0, 0, 0)
