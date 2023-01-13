@@ -131,11 +131,10 @@ h3 {
     font-weight: 200;
 }
 
-/* #f2af47;*/
-
 @media screen and (min-width:1300px) {
     .topnav-image {
-    height: 767px;
+    margin: 0;
+    height: 100vh;
     object-fit: cover;
     object-position: 0 0;
     box-shadow: 0px 5px 0px 0px rgb(0, 0, 0); /*Left and bottom*/
@@ -145,24 +144,28 @@ h3 {
 @media screen and (max-width:1300px) {
     .topnav-image {
     object-fit: cover;
-    height: 550px;
+    height: 60vh;
+    }
+    .topnav-logo {
+    display: none;
     }
     .topnav-logo-background .since {
-    display: none;
+    margin-right: -175px;
     }
         
     .topnav-logo-background .year {
-    display: none;
+        margin-left: -150px;
     }
 }
 
+/*770*/
 
 .topnav {
     background-color: #00000086;
     height: 100px;
     width: 100%;
-    position: absolute;
-    top: 770px;
+    position:absolute;
+    top: 80vh;
     left:0;
     right:0;
     margin-left: auto;
@@ -185,7 +188,7 @@ h3 {
 
 .contact {
     position: absolute;
-    top: 550px;
+    top: 60vh;
     z-index: 1;
     width: 250px;
     height: 80px;

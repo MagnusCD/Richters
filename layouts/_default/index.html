@@ -36,6 +36,7 @@
 
 <img id="richters-bg" img src="/images/richters-bg.png">
 
+
 <div class="header">
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
@@ -79,6 +80,7 @@
     <i class="fa fa-bars fa-2x"></i></a>
     
 </div>
+
 
 <main class="site-main">
 
@@ -131,7 +133,10 @@
     <center><h1>Nyheder</h1></center>
     <div class="posts-container">
         <section class="posts-list">
-            {{ range (.Site.GetPage "nyheder").Paginator.Pages }}
+            
+            {{ $paginator := .Paginate (where (where .Site.Pages "Section" "nyheder") "IsPage" true) }}
+            {{ range $paginator.Pages }}
+           
             <article class="single-post border-bottom pb-4">
                 <h2 class="entry-title mb-4">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -209,10 +214,7 @@
     Tirsdag: 11:00 - 19:00 <br>
     Onsdag: 11:00 - 19:00 <br>
     Torsdag: 11:00 - 19:00 <br>
-    Fredag: 11:00 - 19:00 <br>
-  
-    Lørdag: 11:00 - 17:00 <br><br>
-    1. søndag i måneden: <br> 12:00 - 16:00 <br>
+    Fredag: 11:00 - 23:00 <br>
   </h2>
 </div>
 </center>
@@ -253,11 +255,16 @@
         }
     });
 </script>
-  
+
+<!--
 <script>
+
+let viewportHeight = window.innerHeight * 0.9;
+let viewportWidth = window.innerWidth;
+
     $(window).scroll(function(){
         if($(window).width() > 1300) {
-        if($(window).scrollTop() >765) {
+        if($(window).scrollTop()>viewportHeight) {
         $('.topnav').addClass("fixed");
         }
         else{
@@ -265,6 +272,24 @@
         }
         }
     });
+</script>
+-->
+<script>
+setInterval(function(){
+    let viewportHeight = window.innerHeight * 0.8;
+    let viewportWidth = window.innerWidth;
+
+    $(window).scroll(function(){
+        if($(window).width() > 1300) {
+        if($(window).scrollTop()>viewportHeight) {
+        $('.topnav').addClass("fixed");
+        }
+        else{
+        $('.topnav').removeClass("fixed");
+        }
+        }
+    });
+}, 1000);
 </script>
 
 <script>

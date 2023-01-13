@@ -137,12 +137,16 @@
 }
 
 @media screen and (max-width:1300px) {
+  .om-richters-container {
+    background-size: cover;
+  }
   .grid-container-byvandring {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
     background-image: url("/images/byvandring-img.jpg");
     background-attachment: fixed;
+    background-size: cover;
     margin-left: 0;
     margin-right: 0;
     margin-top: 100px;
