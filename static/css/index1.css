@@ -5,7 +5,6 @@
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
 }
 
 .om-richters-header {
@@ -25,14 +24,18 @@
 
 }
 
+.grid-wrapper {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 100px;
+}
+
+
 .grid-container-byvandring {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  margin-left: 10vw;
-  margin-right: 10vw;
   column-gap: 20px;  
-  margin-top: 50px;
 }
 
 .box p {
@@ -56,17 +59,15 @@
   text-align: center;
 }
 
-.grid-container-byvandring h1 {
+.byvandring-header{
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  grid-column: 2/3;
-  grid-row: 1/1;
   text-align: center;
 }
 
 .one {
   grid-column: 1/1;
-  grid-row: 2/2;
+  grid-row: 1/1;
   background-image: url("/images/byvandring-img.jpg");
   background-attachment: fixed;
   background-position: left;
@@ -74,7 +75,7 @@
 
 .two {
   grid-column: 2/3;
-  grid-row: 2/2;
+  grid-row: 1/1;
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url("/images/byvandring-img.jpg");
   background-attachment: fixed;
@@ -83,7 +84,7 @@
 
 .three {
   grid-column: 3/3;
-  grid-row: 2/2;
+  grid-row: 1/1;
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url("/images/byvandring-img.jpg");
   background-attachment: fixed;
@@ -91,7 +92,7 @@
 }
 
 .nyheder-container  {
-  margin-top: 75px;
+  margin-top: 100px;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -107,7 +108,7 @@
   padding-bottom: 25px;
   padding-top: 25px;
 
-  
+
 
   display: flex;
   justify-content: center;
@@ -118,8 +119,14 @@
 }
 
 
+
+.single-post {
+  padding-left: 7px;
+}
+
+
 .åbningstider-container h1 {
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 
@@ -152,7 +159,6 @@
     object-fit: cover;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 100px;
   }
   .grid-container-byvandring h1 {
     margin-bottom: -20px;
@@ -215,7 +221,7 @@ img {vertical-align: middle;}
     margin: auto;
   */ 
   position: relative;
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 .slideshow-container h1 {

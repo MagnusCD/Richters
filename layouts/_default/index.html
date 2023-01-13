@@ -98,8 +98,10 @@
 
 
 <center>
+<div class="grid-wrapper">
+<h1 class="byvandring-header">Byvandring</h1>
 <div class="grid-container-byvandring">
-<h1>Byvandring</h1>
+
     <center>
     <div class="box one">
         <h2>Booking</h2>
@@ -116,7 +118,7 @@
             <br>På vores ture besøger man den gamle Apotekerkælder, der er byens største og flottest bevarede kælder. Vi er de eneste, der kan tilbyde besøg i denne fredede store flotte unikke middelalderkælder (vi besøger normalt også et par baggårde i nogle fredede ejendomme, hvor der ikke er offentlig adgang). Vores ture er udover en masse historik om de gamle huse også med farverige historier om gamle familier, bysbørn, politik mm. <br><br> Varighed ca. 1,5t
             
         </p>
-        <br><br><br><br>
+       
     </div>
     </center>
 
@@ -133,8 +135,10 @@
     </center>
     <br>
 </div>
+</div>
 </center>
 
+<center>
 <div class="nyheder-container">
     <center><h1>Nyheder</h1></center>
     <div class="posts-container">
@@ -153,13 +157,9 @@
                     <span class="post-date">
                         <time>{{ dateFormat .Site.Params.dateFormat .Date }} |</time>
                     </span>
-                    <span class="post-tags">
-                        Tags:
-                        {{ range (.GetTerms "tags") }}
-                            <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-                        {{ end }}
-                    </span>
-                </div>
+              
+                    <br><br>
+
                 <div class="entry-content">
                     {{ .Summary }}
                     {{ if .Truncated }}
@@ -171,10 +171,10 @@
             <div class="pt-4">
                 {{ template "_internal/pagination.html" . }}
             </div>
-        
         </section>
     </div>
 </div>
+</center>
 
 <center>
 <div class="slideshow-container">
@@ -216,11 +216,11 @@
 <div class="åbningstider-container">
     <h1>Åbningstider</h1>
     <h2>
-    Mandag: 11:00 - 19:00  <br>
-    Tirsdag: 11:00 - 19:00 <br>
-    Onsdag: 11:00 - 19:00 <br>
-    Torsdag: 11:00 - 19:00 <br>
-    Fredag: 11:00 - 23:00 <br>
+    Mandag: <br> 11:00 - 19:00  <br><br>
+    Tirsdag:<br> 11:00 - 19:00 <br><br>
+    Onsdag: <br>11:00 - 19:00 <br><br>
+    Torsdag: <br>11:00 - 19:00 <br><br>
+    Fredag:<br> 11:00 - 23:00 <br><br>
   </h2>
 </div>
 </center>
