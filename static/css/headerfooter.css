@@ -144,7 +144,7 @@ h3 {
 @media screen and (max-width:1300px) {
     .topnav-image {
     object-fit: cover;
-    height: 60vh;
+    height: 75vh;
     }
     .topnav-logo {
     display: none;
@@ -188,7 +188,7 @@ h3 {
 
 .contact {
     position: absolute;
-    top: 60vh;
+    top: 75vh;
     z-index: 1;
     width: 250px;
     height: 80px;
