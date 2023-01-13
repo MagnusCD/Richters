@@ -146,7 +146,9 @@ h3 {
     height: 75vh;
     }
     .topnav-logo {
-    display: none;
+    outline: none;
+    height:50px;
+    width: 50px;
     }
     .topnav-logo-background .since {
     margin-right: -175px;
