@@ -28,12 +28,17 @@ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin-left: 2vw;
     background-color: #d63f44;
+    font-size: 250%;
+    padding-bottom: 5px;
+
+    /*
     display: flex;
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
     left: 0;
     right: 0;
+    */
   }
 
   .entry-content {
