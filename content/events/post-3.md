@@ -1,5 +1,5 @@
 +++
-title = "Byvandring arrangement"
+title = "Byvandring"
 date = 2023-01-14T18:11:19+01:00
 draft = false
 author = "Richters Ølstue"

@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="events-container">
-    <center><h1>Events</h1></center>
+    <center><h1>Arrangementer</h1></center>
     <div class="posts-container">
         <section class="posts-list">
             {{ range .Paginator.Pages }}
@@ -11,7 +11,7 @@
                     {{ .Title }}
                 </h2>
                 </center>
-                
+
                 <div class="entry-content">
                     {{ .Content }}
             </article>
