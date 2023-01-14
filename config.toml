@@ -5,12 +5,12 @@ paginate = 3
 summaryLength = 40
 
 [[menu.main]]
-name = "Kontakt Os | Richters"
+name = "Kontakt Os"
 url = "/contact"
 weight = 2
 
 [[menu.main]]
-name = "Events | Richters"
+name = "Events"
 url = "/events"
 weight = 2
 
