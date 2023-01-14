@@ -1,40 +1,20 @@
 {{ define "main" }}
-<link rel="stylesheet" href="/css/events.css">
-
-<div class="nyheder-container">
-    <center><h1>Nyheder</h1></center>
+<div class="events-container">
+    <center><h1>Events</h1></center>
     <div class="posts-container">
         <section class="posts-list">
             {{ range .Paginator.Pages }}
             <article class="single-post border-bottom pb-4">
-                <h2 class="entry-title mb-4">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </h2>
 
-                <div class="post-meta mb-4">
-                    <span class="post-author"> Slået op af: {{ .Params.author }} |</span>
-                    <span class="post-date">
-                        <time>{{ dateFormat .Site.Params.dateFormat .Date }} |</time>
-                    </span>
-                    <span class="post-tags">
-                        Tags:
-                        {{ range (.GetTerms "tags") }}
-                            <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-                        {{ end }}
-                    </span>
-                </div>
+                <br>
+
+                <h2 class="entry-title mb-4">
+                    {{ .Title }}
+                </h2>
                 <div class="entry-content">
-                    {{ .Summary }}
-                    {{ if .Truncated }}
-                    <a href="{{ .RelPermalink }}">Læs mere...</a>
-                    {{ end }}
-                </div>
+                    {{ .Content }}
             </article>
             {{ end }}
-            <div class="pt-4">
-                {{ template "_internal/pagination.html" . }}
-            </div>
-        
         </section>
     </div>
 </div>

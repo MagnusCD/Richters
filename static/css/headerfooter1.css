@@ -332,13 +332,11 @@ h3 {
     display: block;
   }
 
-   .topnav.responsive .topnav-button2 {
+   .topnav.responsive .topnav-button2, .topnav.responsive .topnav-button3, .topnav.responsive .topnav-button4 {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 
-  .topnav.responsive .topnav-button3 {
+  .topnav.responsive .topnav-button5 {
     display: block;
   }
 }
