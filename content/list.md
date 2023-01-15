@@ -1,4 +1,4 @@
 ---
 layout: "events"
-title: "Events | Richters"
+title: "Events | Richters Ølstue"
 ---

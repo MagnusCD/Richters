@@ -1,4 +1,5 @@
 {{ define "main" }}
+<center>
 <div class="container">
     <article class="single-post">
         <h1 class="entry-title mt-4 mb-4">{{ .Title }}</h1>
@@ -16,4 +17,13 @@
         <div class="entry-content mt-4">{{ .Content }} </div>
     </article>
 </div>
+</center>
+
+<style>
+    .entry-content  {
+        margin-right: 2vw;
+        padding-bottom: 25px;
+    }
+</style>
+
 {{ end }}

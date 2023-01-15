@@ -1,4 +1,4 @@
 ---
 layout: "contact"
-title: "Kontakt Os | Richters"
+title: "Kontakt Os | Richters Ølstue"
 ---
