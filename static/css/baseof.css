@@ -9,9 +9,6 @@
 }
 
 @media screen and (min-width: 1300px) {
-    #bg-mobile {
-        display: none;
-    }
     .topnav-logo-background {
       margin-bottom: 150px;
     }
@@ -22,17 +19,6 @@
 }
 
 @media screen and (max-width: 1300px) {
-    #richters-bg {
-        display: none;
-    }
-    #bg-mobile {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-    }
     .topnav {
         background-color: #ffffff00;
         box-shadow: none;
