@@ -1,5 +1,28 @@
 {{ define "main" }}
-<span class="test">test</span>
+<center><img id="menukort" img src="/images/menukort.jpg"></center>
+
+<style>
+#menukort {
+    height: 80vw;
+    width: 50%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.topnav-button4 a:link, .topnav-button4 a:visited {
+    color: #f2af47;
+  }
+
+  .topnav-button4 a:hover {
+    color: #ffffff;
+  }
 
 
+@media screen and (max-width: 1300px) {
+    #menukort {
+    height: 160vw;
+    width: 80%;
+    }
+}
+</style>
 {{ end }}
