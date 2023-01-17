@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on Richters Ølstue</title>
+    <link>https://richters.netlify.app/events/</link>
+    <description>Recent content in Events on Richters Ølstue</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Jan 2023 18:11:19 +0100</lastBuildDate><atom:link href="https://richters.netlify.app/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Byvandring</title>
+      <link>https://richters.netlify.app/events/post-3/</link>
+      <pubDate>Sat, 14 Jan 2023 18:11:19 +0100</pubDate>
+      
+      <guid>https://richters.netlify.app/events/post-3/</guid>
+      <description>Elsker du god kaffe, skulle du måske prøve vores ❤️ Kaffebrygningens ædle kunst foregår på vores flagskib af en fuldautomatisk schweizisk kaffemaskine, der kan udføre de fleste processer 100% nøjagtigt såsom at male de friske bønner, dosere den helt rigtige mængde bønner, stille gennemløbstid mm.</description>
+    </item>
+    
+    <item>
+      <title>Post 1</title>
+      <link>https://richters.netlify.app/events/post-2/</link>
+      <pubDate>Sat, 14 Jan 2023 18:11:16 +0100</pubDate>
+      
+      <guid>https://richters.netlify.app/events/post-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Velkommen</title>
+      <link>https://richters.netlify.app/events/post-1/</link>
+      <pubDate>Thu, 12 Jan 2023 21:08:20 +0100</pubDate>
+      
+      <guid>https://richters.netlify.app/events/post-1/</guid>
+      <description>Her vil du finde en oversigt over kommende arrangementer af Richters Ølstue.</description>
+    </item>
+    
+  </channel>
+</rss>
