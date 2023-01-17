@@ -1,6 +1,10 @@
 {{ define "main" }}
+<head>
+    <link rel="stylesheet" href="/css/single.css">
+</head>
+
 <center>
-<div class="container">
+<div class="single-post-container">
     <article class="single-post">
         <h1 class="entry-title mt-4 mb-4">{{ .Title }}</h1>
         <div class="post-meta">
@@ -10,22 +14,52 @@
             </span>
             <span class="post-tags">
                 Tags:
+                <br>
                 {{ range (.GetTerms "tags") }}
                     <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
                 {{ end }}
             </span>
-        <div class="entry-content mt-4">{{ .Content }} </div>
+        <div class="entry-content mt-4"> {{ .Content }} </div>
     </article>
 </div>
 </center>
 
+
 <style>
-    .entry-content  {
-        margin-right: 2vw;
-        padding-bottom: 25px;
+    .entry-title {
+        background-color: #d63f44;
+        width: 100%;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        padding-bottom: 5px;
     }
 
-    
+    .single-post-container {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 0;
+        box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
+        margin-top: 50px;
+        margin-left:  10vw;
+        margin-right: 10vw;
+    }
+
+    .entry-content  {
+        padding-bottom: 25px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+   .single-post-container img {
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    @media screen and (max-width: 1300px) {
+    .single-post-container img  {
+        width: 80%;
+        }
+    }
+
 </style>
 
 {{ end }}
