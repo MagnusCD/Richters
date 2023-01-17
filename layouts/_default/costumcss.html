@@ -1,0 +1,3 @@
+{{ range .css }}
+  <link rel='stylesheet' href='{{ . | absURL }}'>
+{{ end }}
