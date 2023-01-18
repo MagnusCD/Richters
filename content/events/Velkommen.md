@@ -8,5 +8,5 @@ tags = []
 
 ![Fadølshaner](/images/events/post-1.jpg)
 
-Her vil du finde en oversigt over kommende arrangementer af Richters Ølstue. Vi holder løbende arrangementer såsom live-musik og kælderarrangementer i den gamle apotekerkælder fra middelalderens tid. 
+Her vil du finde en oversigt over kommende arrangementer af Richters Ølstue. Vi holder løbende arrangementer såsom live-musik på Richters Ølstue og kælderarrangementer i den gamle apotekerkælder fra middelalderens tid. 
 
