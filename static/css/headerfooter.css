@@ -163,7 +163,7 @@ h3 {
 @media screen and (max-width:1300px) {
     .topnav-image {
     object-fit: cover;
-    height: 75vh;
+    height: 78vh;
     }
     .topnav-logo {
     outline: none;
