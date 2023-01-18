@@ -30,6 +30,8 @@ function reveal() {
   }
 }
 
+window.addEventListener("scroll", reveal);
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
