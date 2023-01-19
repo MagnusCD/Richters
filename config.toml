@@ -1,4 +1,4 @@
-baseURL = 'https://richters.netlify.app/'
+baseURL = 'https://richtersoelstue.dk/'
 languageCode = 'en-us'
 title = 'Richters Ølstue'
 paginate = 3
