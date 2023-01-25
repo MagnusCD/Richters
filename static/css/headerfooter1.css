@@ -187,8 +187,8 @@ h3 {
 
 .topnav-logo-background .name {
     position: absolute;
-    z-index: 2;
-    margin-left: -300px;
+    margin-right: 310px;
+
     margin-top: 50px;
 
     color: #f7e3af;
@@ -198,8 +198,9 @@ h3 {
 
 .topnav-logo-background .anno {
     position: absolute;
-    z-index: 2;
-    margin-right: -300px;
+    margin-left: 280px;
+    
+
     margin-top: 50px;
 
     color: #f7e3af;
@@ -226,28 +227,14 @@ h3 {
     width: 50px;
     }
     .topnav-logo-background .name {
-   
-        margin-left: 0px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        
-        
+        margin-right: 0;
+        margin-right: 120px;
+ 
     }
     .topnav-logo-background .anno {
-        margin-right: 0px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        
+        margin-left: 0;
+        margin-left: 120px;
+
     }
 }
 
