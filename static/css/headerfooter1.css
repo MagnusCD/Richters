@@ -159,18 +159,18 @@ h3 {
 
 
 .topnav-logo {
-    height: 150px;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
     left: 0;
     right: 0;
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(0, 0, 0, 0);
     z-index: 1;
     border-radius: 50%;
     outline: 10px solid #0e5453;
     outline-offset: -5px;
+    height: 150px;
+    width: 150px;
 }
 
 
@@ -214,6 +214,10 @@ h3 {
     object-fit: cover;
     object-position: 1 0;
     }
+
+    .name-anno {
+        display: none;
+    }
 }
 
 @media screen and (max-width:1300px) {
@@ -227,14 +231,24 @@ h3 {
     width: 55px;
     }
     .topnav-logo-background .name {
-        margin-right: 0;
-        margin-right: 150px;
- 
+        display:  none;
     }
     .topnav-logo-background .anno {
-        margin-left: 0;
-        margin-left: 120px;
+        display: none;
+    }
+    .name-anno {
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
 
+        margin-top: 50px;
+
+        color: #f7e3af;
+        font-family: jaf-herb, serif;
+        font-weight: 200;
     }
 }
 
