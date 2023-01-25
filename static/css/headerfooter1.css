@@ -226,11 +226,28 @@ h3 {
     width: 50px;
     }
     .topnav-logo-background .name {
-        margin-left: -130px;
-      
+   
+        margin-left: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
     }
     .topnav-logo-background .anno {
-        margin-right: -130px;
+        margin-right: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 }
 
