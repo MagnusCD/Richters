@@ -223,12 +223,12 @@ h3 {
     }
     .topnav-logo {
     outline: none;
-    height:50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     }
     .topnav-logo-background .name {
         margin-right: 0;
-        margin-right: 120px;
+        margin-right: 150px;
  
     }
     .topnav-logo-background .anno {
@@ -237,8 +237,6 @@ h3 {
 
     }
 }
-
-/*770*/
 
 .topnav {
     background-color: #00000086;
