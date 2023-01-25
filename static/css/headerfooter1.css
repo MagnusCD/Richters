@@ -185,19 +185,23 @@ h3 {
     height: 100px;
 }
 
-.topnav-logo-background .since {
+.topnav-logo-background .name {
     position: absolute;
+    z-index: 2;
     margin-left: -300px;
     margin-top: 50px;
+
     color: #f7e3af;
     font-family: jaf-herb, serif;
     font-weight: 200;
 }
 
-.topnav-logo-background .year {
+.topnav-logo-background .anno {
     position: absolute;
-    margin-right: -275px;
+    z-index: 2;
+    margin-right: -300px;
     margin-top: 50px;
+
     color: #f7e3af;
     font-family: jaf-herb, serif;
     font-weight: 200;
@@ -221,12 +225,12 @@ h3 {
     height:50px;
     width: 50px;
     }
-    .topnav-logo-background .since {
-    margin-right: -175px;
+    .topnav-logo-background .name {
+        margin-left: -130px;
+      
     }
-        
-    .topnav-logo-background .year {
-        margin-left: -150px;
+    .topnav-logo-background .anno {
+        margin-right: -130px;
     }
 }
 
