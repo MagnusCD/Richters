@@ -324,7 +324,7 @@
 <script>
     $(window).resize(function () {
         var viewportWidth = $(window).width();
-        if (viewportWidth < 1300) {
+        if (viewportWidth < 1100) {
         $(".topnav").removeClass("fixed");
         }
     });
@@ -375,7 +375,7 @@ setInterval(function(){
     let viewportHeight = window.innerHeight * 0.8;
     let viewportWidth = window.innerWidth;
     $(window).scroll(function(){
-        if($(window).width() > 1300) {
+        if($(window).width() > 1100) {
         if($(window).scrollTop()>viewportHeight && !classAdded) {
         $('.topnav').addClass("fixed");
         classAdded = true;
