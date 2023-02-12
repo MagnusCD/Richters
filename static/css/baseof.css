@@ -8,7 +8,7 @@
     box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1100px) {
     .topnav-logo-background {
       margin-bottom: 150px;
     }
@@ -18,7 +18,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
     .topnav {
         background-color: #ffffff00;
         box-shadow: none;
