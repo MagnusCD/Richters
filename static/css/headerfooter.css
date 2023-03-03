@@ -380,10 +380,6 @@ h3 {
     line-height: 80px;
 }
 
-.topnav-container .icon {
-    display: none;
-}
-
 @media screen and (max-width: 1100px) {
     .topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
     display: none;
@@ -391,15 +387,6 @@ h3 {
   .topnav {
     background-color: rgba(255, 255, 255, 0);
     }
-  .topnav-container .icon {
-    display: inline-block;
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    color: rgb(255, 255, 255);
-    z-index: 5;
-    text-shadow: -1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px #000000;
-  }
 }
 
 @media screen and (max-width: 1100px) {

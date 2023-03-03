@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/headerfooter.css">
+    <link rel="stylesheet" href="/css/burgermenu.css">
     <link rel="stylesheet" href="/css/baseof.css">
 
     <link rel="stylesheet" href="https://use.typekit.net/yce8sxy.css">
@@ -25,13 +26,20 @@
 </head>
 
 <script>
-    $(function() {$("#myIcon").click(function() {
-        $('.rotate').toggleClass("down");
+    $(document).ready(function(){
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+            $(this).toggleClass('open');
         });
     });
 </script>
 
 <body>
+
+<div class="nav-icon4" id="nav-icon4" onclick="One();">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
 <img id="richters-bg" img src="/images/richters-bg.png">
 
@@ -71,15 +79,6 @@
           <button class="topnav-button5 hover-underline-animation"><a href="/contact/">Kontakt</button></a>
         </div>
     </div>
-
-    <!--
-    <a href="javascript:void(0);" class="icon rotate" id="myIcon" onclick="One();">
-    <i class="fa fa-window-close fa-2x" aria-hidden="true"></i></a>  
-    -->
-    
-    <a href="javascript:void(0);" class="icon rotate" id="myIcon" onclick="One();">
-    <i class="fa fa-bars fa-2x"></i></a>
-    
 </div>
 
 <main class="site-main">
