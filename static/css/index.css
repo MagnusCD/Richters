@@ -123,6 +123,7 @@ body {
   }
   .box p {
     background-color: none;
+    height: fit-content;
   }
   .one {
     display: flex;
@@ -150,9 +151,8 @@ body {
     margin-bottom: 50px;
     background-color: none;
   }
-  .grid-container-byvandring {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: fit-content;
+  .box-wrapper {
+    background-color: #0000009c;
   }
 }
 
