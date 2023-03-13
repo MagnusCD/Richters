@@ -134,8 +134,7 @@ body {
     margin-top: 50px;
     margin-left: 10vw;
     margin-right: 10vw;
-    height: 200px;
-
+    background-color: none;
   }
   .two {
     display: flex;
@@ -143,7 +142,7 @@ body {
     background-image: none;
     margin-left: 10vw;
     margin-right: 10vw;
-    height: 500px;
+    background-color: none;
   }
   .three {
     display: flex;
@@ -152,7 +151,13 @@ body {
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 50px;
-    height: 400px;
+    background-color: none;
+
+  }
+  .box-wrapper {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 }
 
