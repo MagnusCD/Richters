@@ -83,7 +83,6 @@ body {
 .two {
   grid-column: 2/3;
   grid-row: 1/1;
-  background-color: rgba(0, 0, 0, 0.6);
   background-image: url("/images/byvandring-img.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -92,7 +91,6 @@ body {
 .three {
   grid-column: 3/3;
   grid-row: 1/1;
-  background-color: rgba(0, 0, 0, 0.6);
   background-image: url("/images/byvandring-img.jpg");
   background-attachment: fixed;
   background-position: right;
