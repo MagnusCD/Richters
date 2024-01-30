@@ -64,6 +64,13 @@ body {
 }
 
 
+.submit{
+    background-color: #d63f44;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-bottom: 5px;
+}
+
 
 
 
