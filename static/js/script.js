@@ -44,7 +44,7 @@ function myFunction() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const parallaxBg = document.querySelector('.');
+  const parallaxBg = document.querySelector('.richters-bg');
   const topnavImage = document.querySelector('.topnav-image');
 
   window.addEventListener('scroll', function () {
