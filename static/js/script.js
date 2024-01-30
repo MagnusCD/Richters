@@ -45,7 +45,7 @@ function myFunction() {
 
 document.addEventListener('DOMContentLoaded', function () {
   const parallaxBg = document.querySelector('.richters-bg');
-  const topnavImage = document.querySelector('.topnav-image');
+  const topnavImage = document.querySelector('.fb-container');
 
   window.addEventListener('scroll', function () {
     let scrollPosition = window.scrollY;
