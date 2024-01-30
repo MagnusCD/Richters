@@ -75,12 +75,6 @@ body {
 
 
 
-/* Center the form container */
-.form-container {
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-}
 
 /* Center the form elements */
 form {
@@ -99,7 +93,7 @@ form {
 }
 
 /* Style the submit button */
-.form-stack button {
+.form-container button {
     background-color: #00b295;
     color: white;
     padding: 10px 20px;
@@ -109,7 +103,7 @@ form {
     font-size: 18px;
 }
 
-.form-stack button:hover {
+.form-container button:hover {
     background-color: #45a049;
 }
 
