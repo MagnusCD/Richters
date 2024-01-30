@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let scrollPosition = window.scrollY;
     
     // Apply a zoom effect to the parallax background
-    parallaxBg.style.transform = `scale(${1 + scrollPosition * 0.001})`;
+    parallaxBg.style.transform = `translateY(${1 + scrollPosition * -0.001})`;
 
     // Apply an upward movement to the hero image
     topnavImage.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
