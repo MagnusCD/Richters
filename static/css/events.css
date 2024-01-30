@@ -45,7 +45,7 @@ font-size: 250%;
     */
   }
 
-  .entry-content {
+  .entry-content, .post-date {
     color: rgb(0, 0, 0);
     margin-left: 2vw;
   }
