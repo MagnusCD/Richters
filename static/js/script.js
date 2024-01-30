@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //  parallaxBg.style.transform = `scale(${1 + scrollPosition * 0.001})`;
 
     // Apply an upward movement to the hero image
-    topnavImage.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
+    topnavImage.style.transform = `translateY(-${scrollPosition * 0.2}px)`;
   });
 });
 
