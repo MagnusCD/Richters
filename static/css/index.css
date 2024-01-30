@@ -171,7 +171,9 @@ body {
 }
 
 .nyheder-container  {
-  width: 400px;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
   box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.6);
   margin-bottom: 100px;
@@ -312,4 +314,9 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+@media screen and (min-width: 600px) {
+  .fb-container, .nyheder-container, .slideshow-container {
+    width: 800px;
+  }
+}
 
