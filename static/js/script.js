@@ -41,3 +41,15 @@ function myFunction() {
 
 
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const parallaxContainer = document.querySelector('.parallax-container');
+
+  window.addEventListener('scroll', function () {
+    let scrollPosition = window.scrollY;
+    parallaxContainer.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+  });
+});
+
+
