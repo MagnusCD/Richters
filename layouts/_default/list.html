@@ -7,7 +7,7 @@
     <center><h1>Arrangementer</h1></center>
     <div class="posts-container">
         <section class="posts-list">
-            {{ range (.Pages | where .Section "nyheder" | sort "Date" "desc") }}
+            {{ range .Pages.ByDate }}
             <article class="single-post border-bottom pb-4">
 
                 <center>
@@ -20,8 +20,9 @@
                     {{ .Content }}
                 </div>
 
+              
                 <span class="post-date">
-                    <time>Slået op: {{ dateFormat .Site.Params.dateFormat .Date }}</time>
+                    <time><b>Slået op:</b> {{ dateFormat .Site.Params.dateFormat .Date }}</time>
                 </span>
             
             </article>
