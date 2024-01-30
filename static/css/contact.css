@@ -107,3 +107,9 @@ body {
         flex-direction: column;
     }
 }
+
+@media screen and (min-width: 800px) {
+    .contact-grid{
+      width: 700px;
+    }
+  }
