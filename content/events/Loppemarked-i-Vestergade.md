@@ -5,4 +5,4 @@ draft = false
 author = "Richters Ølstue"
 tags = [ ]
 +++
-Loppemarked i Vestergade - se opslag
+Loppemarked i Vestergade. Vi håber at få arrangeret nyt loppemarked i år.
