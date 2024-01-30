@@ -73,27 +73,13 @@ body {
 
 
 
-/* Reset some default styles */
-body, h1, h2, p, label, input, textarea, button {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: 'Arial', sans-serif;
-}
 
 /* Center the form container */
 .form-container {
     width: 80%;
     max-width: 600px;
     margin: 50px auto;
-}
-
-/* Style the form header */
-.form-container-header {
-    font-size: 24px;
-    color: #333;
 }
 
 /* Center the form elements */
@@ -104,7 +90,7 @@ form {
 /* Style form inputs and textarea */
 .form-stack {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin: 10px 0;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -113,8 +99,8 @@ form {
 }
 
 /* Style the submit button */
-button {
-    background-color: #4CAF50;
+.form-stack button {
+    background-color: #00b295;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -123,7 +109,7 @@ button {
     font-size: 18px;
 }
 
-button:hover {
+.form-stack button:hover {
     background-color: #45a049;
 }
 
