@@ -44,27 +44,19 @@ function myFunction() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const parallaxBg = document.querySelector('.parallax-bg');
-  const topnavImage = document.querySelector('.fb-container');
+  const parallaxBg = document.querySelector('.richters-bg');
+  const topnavImage = document.querySelector('.topnav-image');
 
-  // Function to handle the intersection observer callback
-  function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // Apply a zoom effect to the parallax background
-        // parallaxBg.style.transform = `scale(${1 + entry.intersectionRatio * 0.5})`;
+  window.addEventListener('scroll', function () {
+    let scrollPosition = window.scrollY;
+    
+    // Apply a zoom effect to the parallax background
 
-        // Apply an upward movement to the hero image
-        topnavImage.style.transform = `translateY(-${entry.intersectionRatio * 20}px)`;
-      }
-    });
-  }
+    //  parallaxBg.style.transform = `scale(${1 + scrollPosition * 0.001})`;
 
-  // Create an intersection observer
-  const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-
-  // Observe the target elements
-  observer.observe(parallaxBg);
-  observer.observe(topnavImage);
+    // Apply an upward movement to the hero image
+    topnavImage.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
+  });
 });
+
 
