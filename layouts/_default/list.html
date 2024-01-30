@@ -7,7 +7,7 @@
     <center><h1>Arrangementer</h1></center>
     <div class="posts-container">
         <section class="posts-list">
-            {{ range .Pages.ByDate }}
+            {{ range .Pages.ByDate.Reverse }}
             <article class="single-post border-bottom pb-4">
 
                 <center>
