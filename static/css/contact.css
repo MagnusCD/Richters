@@ -117,6 +117,11 @@ body {
       right: 0;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .form-container, .map-container, .åbningstider-container {
       height: 600px;
     }
   }
