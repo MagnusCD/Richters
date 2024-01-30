@@ -101,7 +101,7 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .contact-grid {
         display: flex;
         flex-direction: column;
