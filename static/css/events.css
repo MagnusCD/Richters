@@ -54,13 +54,6 @@ font-size: 250%;
     margin-left: 10px;
   }
 
-  .topnav-button2 a:link, .topnav-button2 a:visited {
-    color: #f2af47;
-  }
-
-  .topnav-button2 a:hover {
-    color: #ffffff;
-  }
 
 .events-container img {
     height: 40vw;
@@ -83,5 +76,14 @@ font-size: 250%;
   }
 
 
+
+
+  .topnav-button2 a:link, .topnav-button2 a:visited {
+    color: #f2af47;
+  }
+
+  .topnav-button2 a:hover {
+    color: #ffffff;
+  }
 
 
