@@ -110,7 +110,7 @@ body {
 
 @media screen and (min-width: 800px) {
     .contact-grid {
-      width: 700px;
+      width: 1000px;
       margin-left: auto;
       margin-right: auto;
       left: 0;
@@ -122,6 +122,6 @@ body {
 
   @media screen and (min-width: 800px) {
     .form-container, .map-container, .åbningstider-container {
-      height: 800px;
+      height: 700px;
     }
   }
