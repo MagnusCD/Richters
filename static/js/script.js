@@ -45,7 +45,7 @@ function myFunction() {
 
 document.addEventListener('DOMContentLoaded', function () {
   const parallaxBg = document.querySelector('.parallax-bg');
-  const topnavImage = document.querySelector('.topnav-image');
+  const topnavImage = document.querySelector('.fb-container');
 
   // Function to handle the intersection observer callback
   function handleIntersection(entries, observer) {
