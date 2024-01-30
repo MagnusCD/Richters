@@ -18,6 +18,11 @@
 
                 <div class="entry-content">
                     {{ .Content }}
+                </div>
+
+                <span class="post-date">
+                    <time>{{ dateFormat .Site.Params.dateFormat .Date }} |</time>
+                </span>
             </article>
             {{ end }}
         </section>
