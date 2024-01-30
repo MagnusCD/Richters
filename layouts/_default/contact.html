@@ -81,7 +81,12 @@
        <center><h1 class="form-container-header">Skriv til os</h1></center>
     
         <center>
-        <form name="contact" action="/success" method="POST" data-netlify="true">
+        <form name="contact" action="/success" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <p class="hidden">
+                <label>
+                  Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+              </p>
             <p>
             <label>Dit navn: 
                 <input type="text" name="name" class="form-stack"/></textarea>
