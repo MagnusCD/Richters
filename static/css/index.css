@@ -313,7 +313,7 @@ img {vertical-align: middle;}
 }
 
 @media screen and (min-width: 800px) {
-  .fb-container, .nyheder-container, .slideshow-container {
+  .fb-container, .nyheder-container, .slideshow-container, .grid-container-byvandring, .om-richters-wrapper {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
