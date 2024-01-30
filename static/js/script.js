@@ -42,21 +42,29 @@ function myFunction() {
 
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const parallaxBg = document.querySelector('.richters-bg');
   const topnavImage = document.querySelector('.topnav-image');
 
-  window.addEventListener('scroll', function () {
+  function handleScroll() {
     let scrollPosition = window.scrollY;
     
     // Apply a zoom effect to the parallax background
-
     parallaxBg.style.transform = `scale(${1 + scrollPosition * 0.0001})`;
 
     // Apply an upward movement to the hero image
     topnavImage.style.transform = `translateY(-${scrollPosition * 0.2}px)`;
+  }
+
+  // Add a scroll event listener
+  window.addEventListener('scroll', handleScroll);
+
+  // Add a beforeunload event listener to reset transformations when leaving the page
+  window.addEventListener('beforeunload', function () {
+    parallaxBg.style.transform = 'scale(1)';
+    topnavImage.style.transform = 'translateY(0)';
   });
 });
+
 
 
