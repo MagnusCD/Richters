@@ -1,9 +1,8 @@
 +++
 title = "Loppemarked i Vestergade"
-date = 2023-05-30T21:46:39+02:00
+date = 2023-05-30T19:46:39.000Z
 draft = false
 author = "Richters Ølstue"
-tags = []
+tags = [ ]
 +++
-
-Loppemarked i Vestergade 6. august.
+Loppemarked i Vestergade - se opslag
