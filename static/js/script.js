@@ -64,7 +64,16 @@ document.addEventListener('DOMContentLoaded', function () {
     parallaxBg.style.transform = 'scale(1)';
     topnavImage.style.transform = 'translateY(0)';
   });
+
+  // Reset scroll position on page load or reload
+  window.addEventListener('load', function () {
+    // Set the scroll position to zero
+    window.scrollTo(0, 0);
+    // Call the handleScroll function to apply transformations at the top of the page
+    handleScroll();
+  });
 });
+
 
 
 
