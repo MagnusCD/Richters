@@ -313,9 +313,9 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .fb-container, .nyheder-container, .slideshow-container {
-    width: 1000px;
+    width: 700px;
   }
 }
 
