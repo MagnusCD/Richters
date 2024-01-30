@@ -69,5 +69,15 @@ font-size: 250%;
   }
 
 
+  .pt-4 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+
+
 
 
