@@ -29,10 +29,8 @@ font-size: 250%;
   
   .single-post {
     margin-top: 50px;
-    margin-left: 10vw;
-    margin-right: 10vw;
     height: fit-content;
-    min-height: 350px;
+    min-height: 500px;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
   }
@@ -44,15 +42,6 @@ font-size: 250%;
     background-color: #d63f44;
     font-size: 250%;
     padding-bottom: 5px;
-
-    /*
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    left: 0;
-    right: 0;
-    */
   }
 
   .entry-content, .post-date {
@@ -73,9 +62,9 @@ font-size: 250%;
     width: 40vw;
     border-radius: 50%;
     float: right;
-    max-width: 250px;
-    max-height: 250px;
-    margin-right: 2vw;
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 5px;
   }
 
 
