@@ -20,4 +20,4 @@ url = "/menu"
 weight = 2
 
 [params]
-dateFormat = "2. Jan, 2006"
+dateFormat = "2006-01-02T15:04:05.000Z"
