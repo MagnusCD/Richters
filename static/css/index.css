@@ -245,8 +245,7 @@ img {vertical-align: middle;}
 }
 
 .gallery-images {
-  width: 50%;
-  height: 30vw;
+  width: 400px;
 }
 
 @media screen and (max-width:1100px) {
@@ -316,7 +315,7 @@ img {vertical-align: middle;}
 
 @media screen and (min-width: 600px) {
   .fb-container, .nyheder-container, .slideshow-container {
-    width: 800px;
+    width: 1000px;
   }
 }
 
