@@ -1,6 +1,6 @@
 +++
 title = "Tatarfredag"
-date = 2024-01-30T23:34:08+01:00
+date = 2024-01-30T22:54:00.000Z
 draft = false
 author = "Richters Ølstue"
 tags = [ ]
