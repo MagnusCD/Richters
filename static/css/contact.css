@@ -64,12 +64,90 @@ body {
 }
 
 
-.submit{
-    background-color: #d63f44;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    padding-bottom: 5px;
+
+
+
+
+
+
+
+
+
+/* Reset some default styles */
+body, h1, h2, p, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Center the form container */
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+/* Style the form header */
+.form-container-header {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Center the form elements */
+form {
+    text-align: center;
+}
+
+/* Style form inputs and textarea */
+.form-stack {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Hide the honeypot field */
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
