@@ -44,14 +44,14 @@ function myFunction() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const parallaxBg = document.querySelector('.richters-bg');
+  const parallaxBg = document.querySelector('');
   const topnavImage = document.querySelector('.topnav-image');
 
   window.addEventListener('scroll', function () {
     let scrollPosition = window.scrollY;
     
     // Apply a zoom effect to the parallax background
-    parallaxBg.style.transform = `translateY(${1 + scrollPosition * -0.001})`;
+    parallaxBg.style.transform = `scale(${1 + scrollPosition * 0.001})`;
 
     // Apply an upward movement to the hero image
     topnavImage.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
