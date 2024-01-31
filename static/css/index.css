@@ -5,7 +5,7 @@ body {
 .om-richters-container {
   margin-top: 0px;
   background-image: url("/images/om-richters-img.jpg");
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
