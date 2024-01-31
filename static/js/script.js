@@ -40,8 +40,7 @@ function myFunction() {
 }
 
 
-
-
+/*
 document.addEventListener('DOMContentLoaded', function () {
   const parallaxBg = document.querySelector('.om-richters-container');
   const topnavImage = document.querySelector('.topnav-image');
@@ -73,6 +72,48 @@ document.addEventListener('DOMContentLoaded', function () {
     handleScroll();
   });
 });
+*/
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const otherElement = document.querySelector('.om-richters-container');
+  const topnavImage = document.querySelector('.topnav-image');
+  const parallaxBg = document.querySelector('.richters-bg');
+
+  function handleScroll() {
+    let scrollPosition = window.scrollY;
+    
+    // Apply a parallax effect to the background (scrolls in the opposite direction)
+    otherElement.style.transform = `translateY(-${scrollPosition * 0.15}px)`;
+
+    // Apply an upward movement to the hero image (scrolls in the opposite direction)
+    topnavImage.style.transform = `translateY(${scrollPosition * 0.15}px)`;
+
+    // Apply a scaling effect to the other element
+    parallaxBg.style.transform = `scale(${1 + scrollPosition * 0.015})`;
+  }
+
+  // Add a scroll event listener
+  window.addEventListener('scroll', handleScroll);
+
+  // Add a beforeunload event listener to reset transformations when leaving the page
+  window.addEventListener('beforeunload', function () {
+    otherElement.style.transform = 'translateY(0)';
+    topnavImage.style.transform = 'translateY(0)';
+    parallaxBg.style.transform = 'scale(1)';
+  });
+
+  // Reset scroll position on page load or reload
+  window.addEventListener('load', function () {
+    // Set the scroll position to zero
+    window.scrollTo(0, 0);
+    // Call the handleScroll function to apply transformations at the top of the page
+    handleScroll();
+  });
+});
+
 
 
 
