@@ -32,37 +32,34 @@ window.addEventListener("scroll", reveal);
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
 
 
-/*
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
-  const parallaxBg = document.querySelector('.om-richters-container');
+  const otherElement = document.querySelector('.om-richters-container');
   const topnavImage = document.querySelector('.topnav-image');
 
   function handleScroll() {
     let scrollPosition = window.scrollY;
-    
-    // Apply a zoom effect to the parallax background
-    parallaxBg.style.transform = `translateY(-${scrollPosition * -0.15}px)`;
 
-    // Apply an upward movement to the hero image
-    topnavImage.style.transform = `translateY(-${scrollPosition * 0.15}px)`;
+    // Apply an upward movement to the other element
+    otherElement.style.transform = `translateY(-${scrollPosition * 0.15}px)`;
+
+    // Apply a downward movement to the hero image
+    topnavImage.style.transform = `translateY(${scrollPosition * 0.15}px)`;
+    
+    // Add your custom function here (e.g., myFunction())
+    myFunction();
   }
 
-  // Add a scroll event listener
+  // Add a scroll event listener to trigger the handleScroll function
   window.addEventListener('scroll', handleScroll);
-
-  // Add a beforeunload event listener to reset transformations when leaving the page
-  window.addEventListener('beforeunload', function () {
-    parallaxBg.style.transform = 'scale(1)';
-    topnavImage.style.transform = 'translateY(0)';
-  });
 
   // Reset scroll position on page load or reload
   window.addEventListener('load', function () {
@@ -72,11 +69,22 @@ document.addEventListener('DOMContentLoaded', function () {
     handleScroll();
   });
 });
-*/
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 
 
 
 
+
+
+
+
+/*
 document.addEventListener('DOMContentLoaded', function () {
   const otherElement = document.querySelector('.om-richters-container');
   const topnavImage = document.querySelector('.topnav-image');
@@ -113,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
     handleScroll();
   });
 });
-
+*/
 
 
 
