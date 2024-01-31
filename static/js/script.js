@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let scrollPosition = window.scrollY;
 
     // Apply an upward movement to the other element
-    otherElement.style.transform = `translateY(-${scrollPosition * 0.15}px)`;
+    otherElement.style.transform = `translateY(${scrollPosition * 0.15}px)`;
 
     // Apply a downward movement to the hero image
     topnavImage.style.transform = `translateY(${scrollPosition * 0.15}px)`;
