@@ -3,7 +3,7 @@ body {
 }
 
 .om-richters-container {
-  margin-top: 100px;
+  margin-top: 0px;
   background-image: url("/images/om-richters-img.jpg");
   background-attachment: fixed;
   background-position: top left;
