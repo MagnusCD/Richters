@@ -250,6 +250,7 @@ img {vertical-align: middle;}
   position: relative;
   margin-left: 10vw;
   margin-right: 10vw;
+ 
 }
 
 .slideshow-wrapper {
@@ -257,6 +258,7 @@ img {vertical-align: middle;}
   height: fit-content;
   padding-top: 10px;
   padding-bottom: 10px;
+  min-height: 400px;
 }
 
 .gallery-images {
