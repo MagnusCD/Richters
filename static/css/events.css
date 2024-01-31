@@ -2,6 +2,10 @@ body {
   font-family: bilo, sans-serif;
 }
 
+.events-container {
+  margin-top: 150px;
+}
+
 .posts-container {
   width: 800px;
 }
