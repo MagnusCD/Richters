@@ -7,8 +7,8 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-  .events-container {
-    width: 300px;
+  .posts-container {
+    width: 400px;
   }
 
 }
@@ -26,7 +26,6 @@ font-size: 250%;
     margin-right: auto;
     left: 0;
     right: 0;
-    width: 900px;
   }
   
   .single-post {
