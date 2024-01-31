@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
     topnavImage.style.transform = `translateY(${scrollPosition * 0.15}px)`;
 
     // Apply a scaling effect to the other element
-    parallaxBg.style.transform = `scale(${1 + scrollPosition * 0.015})`;
+    parallaxBg.style.transform = `scale(${1 + scrollPosition * 0.0015})`;
   }
 
   // Add a scroll event listener
