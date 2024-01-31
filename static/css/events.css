@@ -7,7 +7,7 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-  .posts-container {
+  .events-container {
     width: 300px;
   }
 
