@@ -16,11 +16,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1100px) {
-  .single-post {
-    min-width: 400px;
-  }
-}
 
 .events-container h1 {
 color: white;
