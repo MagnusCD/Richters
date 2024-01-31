@@ -1,6 +1,6 @@
 +++
 title = "Richters 6-års fødselsdag"
-date = 2023-05-30T20:46:39.000Z
+date = 2023-05-30T20:46:39+01:00
 draft = false
 author = "Richters Ølstue"
 tags = [ ]

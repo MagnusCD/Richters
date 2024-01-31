@@ -1,6 +1,6 @@
 +++
 title = "Vestergade Marked"
-date = 2023-05-30T21:46:39.000Z
+date = 2023-05-30T21:46:39+01:00
 draft = false
 author = "Richters Ølstue"
 tags = [ ]
