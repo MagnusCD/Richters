@@ -117,8 +117,6 @@ body {
     background-attachment: scroll;
     background-size: cover;
     object-fit: cover;
-    margin-left: 0;
-    margin-right: 0;
   }
   .grid-container-byvandring h1 {
     margin-bottom: -20px;
