@@ -71,9 +71,8 @@ body {
 
 .grid-wrapper {
   margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 
@@ -391,6 +390,14 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1100px) {
     .fb-container, .slideshow-container {
