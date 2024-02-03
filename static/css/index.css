@@ -30,8 +30,34 @@ body {
   padding-right: 50px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .grid-wrapper {
-  width: 800px;
   margin-top: 100px;
 }
 
@@ -147,6 +173,40 @@ body {
     background-color:rgba(0, 0, 0, 0.6)
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .nyheder-container h1 {
@@ -332,6 +392,3 @@ img {vertical-align: middle;}
   }
 } 
 
-.byvandring-header, .grid-wrapper, .grid-container-byvandring {
-  margin: 0 auto;
-}
