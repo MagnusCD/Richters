@@ -242,6 +242,11 @@ body {
   margin-right: auto;
 }
 
+.fb-like-box {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .fb-container h1 {
   background-color: #d63f44;
   color: white;
