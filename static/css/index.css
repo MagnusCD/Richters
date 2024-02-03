@@ -133,24 +133,21 @@ body {
     flex-direction: column;
     background-image: none;
     margin-top: 50px;
-    margin-left: 15vw;
-    margin-right: 15vw;
+ 
     background-color:rgba(0, 0, 0, 0.6)
   }
   .two {
     display: flex;
     flex-direction: column;
     background-image: none;
-    margin-left: 15vw;
-    margin-right: 15vw;
+ 
     background-color:rgba(0, 0, 0, 0.6)
   }
   .three {
     display: flex;
     flex-direction: column;
     background-image: none;
-    margin-left: 15vw;
-    margin-right: 15vw;
+ 
     margin-bottom: 50px;
     background-color:rgba(0, 0, 0, 0.6)
   }
