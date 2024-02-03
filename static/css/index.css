@@ -243,7 +243,7 @@ body {
 }
 
 .fb-like-box {
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .fb-container h1 {
