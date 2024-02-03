@@ -31,9 +31,7 @@ body {
 }
 
 .grid-wrapper {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 100px;
+  width: 800px;
 }
 
 
