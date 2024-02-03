@@ -71,6 +71,7 @@ body {
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
+  width: 350px;
 }
 
 .one {
@@ -122,9 +123,6 @@ body {
   .grid-container-byvandring h1 {
     margin-bottom: -20px;
     padding-top: 20px;
-  }
-  .box {
-    width: 300px;
   }
   .box p {
     height: fit-content;
