@@ -37,7 +37,7 @@ body {
     grid-template-rows: 1fr;
     width: 800px;
     column-gap: 50px;
-    justify-content: center;
+    margin: 0 auto;
     margin-top: 100px;
 }
 
