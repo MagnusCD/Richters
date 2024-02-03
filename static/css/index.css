@@ -332,6 +332,6 @@ img {vertical-align: middle;}
   }
 } 
 
-.byvandring-header, .grid-wrapper {
+.byvandring-header, .grid-wrapper, .grid-container-byvandring {
   margin: 0 auto;
 }
