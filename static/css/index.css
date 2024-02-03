@@ -81,8 +81,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap: 20px;
-  margin-left: 20vw;
-  margin-right: 20vw;
 }
 
 .byvandring-header{
@@ -111,6 +109,8 @@ body {
   flex-direction: column;
   text-align: center;
   width: 350px;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .one {
