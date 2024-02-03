@@ -14,7 +14,11 @@ body {
   .posts-container {
     width: 350px;
   }
-
+  .events-container img {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+  }
 }
 
 .events-container h1 {
@@ -56,12 +60,10 @@ font-size: 250%;
 
 
 .events-container img {
-    height: 40vw;
-    width: 40vw;
     border-radius: 50%;
     float: right;
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 200px;
     margin-right: 5px;
   }
 
