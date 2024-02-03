@@ -242,15 +242,7 @@ body {
   margin-right: auto;
 }
 
-.fb-like-box {
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
 
-}
 
 .fb-container h1 {
   background-color: #d63f44;
