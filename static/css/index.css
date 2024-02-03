@@ -71,6 +71,9 @@ body {
 
 .grid-wrapper {
   margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 
