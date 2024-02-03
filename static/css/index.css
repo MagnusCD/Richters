@@ -121,7 +121,7 @@ body {
   flex-direction: column;
   text-align: center;
   width: 350px;
-
+  justify-content: center;
 }
 
 .one {
