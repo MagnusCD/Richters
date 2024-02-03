@@ -30,6 +30,18 @@ body {
   padding-right: 50px;
 }
 
+@media screen and (max-width:1100px) {
+  .om-richters-wrapper {
+    width: 350px;
+  }
+
+  .om-richters-container {
+    background-attachment: scroll;
+    background-size: cover;
+    object-fit: cover;
+  }
+}
+
 
 
 
@@ -122,15 +134,6 @@ body {
 }
 
 @media screen and (max-width:1100px) {
-  .om-richters-wrapper {
-    width: 350px;
-  }
-
-  .om-richters-container {
-    background-attachment: scroll;
-    background-size: cover;
-    object-fit: cover;
-  }
   .grid-container-byvandring {
     display: flex;
     flex-direction: column;
