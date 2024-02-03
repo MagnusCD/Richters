@@ -335,10 +335,4 @@ img {vertical-align: middle;}
 }
 
 
-  .fb-container, .nyheder-container, .slideshow-container, .grid-container-byvandring, .grid-wrapper .om-richters-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-  }
-
 
