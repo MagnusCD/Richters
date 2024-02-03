@@ -35,8 +35,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    width: 800px;
     column-gap: 50px;
 
     margin-top: 100px;
@@ -52,6 +51,8 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
     margin-bottom: 50px;
+    height: 700px;
+    width: 400px;
 }
 
 .form-container-header {
@@ -140,6 +141,8 @@ form {
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
     margin-bottom: 50px;
+    height: 700px;
+    width: 400px;
 }
 .åbningstider-container-header {
     background-color: #d63f44;
@@ -158,6 +161,8 @@ form {
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
     margin-bottom: 50px;
+    height: 700px;
+    width: 400px;
 }
 
 .map-container-header {
@@ -172,24 +177,19 @@ form {
     .contact-grid {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-@media screen and (min-width: 1100px) {
-    .contact-grid {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 
-  @media screen and (min-width: 1100px) {
+@media screen and (max-width: 1100px) {
     .form-container, .map-container, .åbningstider-container {
-      height: 700px;
-      width: 250px;
+      width: 350px;
     }
-  }
+}
