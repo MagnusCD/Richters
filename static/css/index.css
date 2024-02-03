@@ -72,6 +72,7 @@ body {
 .grid-wrapper {
   margin-top: 100px;
   justify-content: center;
+  width: 800px;
 }
 
 
