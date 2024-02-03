@@ -106,10 +106,6 @@ body {
     background-size: cover;
     object-fit: cover;
   }
-  .grid-wrapper {
-    margin-left: 0;
-    margin-right: 0;
-  }
   .grid-container-byvandring {
     display: flex;
     flex-direction: column;
