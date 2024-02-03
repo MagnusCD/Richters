@@ -123,6 +123,9 @@ body {
     margin-bottom: -20px;
     padding-top: 20px;
   }
+  .box {
+    width: 300px;
+  }
   .box p {
     height: fit-content;
     background-color: rgba(0, 0, 0, 0)
@@ -348,8 +351,4 @@ img {vertical-align: middle;}
     align-items: center;
   }
 
-  .box {
-    width: 300px;
-  }
-}
 
