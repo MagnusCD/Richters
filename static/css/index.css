@@ -25,8 +25,8 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -130,24 +130,24 @@ body {
     flex-direction: column;
     background-image: none;
     margin-top: 50px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     background-color:rgba(0, 0, 0, 0.6)
   }
   .two {
     display: flex;
     flex-direction: column;
     background-image: none;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     background-color:rgba(0, 0, 0, 0.6)
   }
   .three {
     display: flex;
     flex-direction: column;
     background-image: none;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 50px;
     background-color:rgba(0, 0, 0, 0.6)
   }
@@ -173,8 +173,8 @@ body {
 
 .nyheder-container  {
   margin-top: 100px;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.6);
   margin-bottom: 100px;
@@ -215,8 +215,8 @@ body {
 
 .fb-container {
   margin-top: 100px;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -248,8 +248,8 @@ img {vertical-align: middle;}
 .slideshow-container {
   box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
   position: relative;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   
 }
 
