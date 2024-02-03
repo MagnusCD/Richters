@@ -138,6 +138,10 @@ body {
 }
 
 @media screen and (max-width:1100px) {
+  .grid-wrapper {
+    width: 100%;
+  }
+
   .grid-container-byvandring {
     display: flex;
     flex-direction: column;
