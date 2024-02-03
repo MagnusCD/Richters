@@ -71,8 +71,7 @@ body {
 
 .grid-wrapper {
   margin-top: 100px;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  justify-content: center;
 }
 
 
@@ -81,6 +80,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap: 20px;
+  justify-content: center;
 }
 
 .byvandring-header{
