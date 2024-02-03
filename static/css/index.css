@@ -247,6 +247,9 @@ body {
   margin-right: auto;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+
 }
 
 .fb-container h1 {
