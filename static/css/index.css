@@ -331,3 +331,7 @@ img {vertical-align: middle;}
     width: 350px;
   }
 } 
+
+.byvandring-header, .grid-wrapper {
+  margin: 0 auto;
+}
