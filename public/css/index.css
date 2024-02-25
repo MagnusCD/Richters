@@ -152,10 +152,6 @@ body {
     margin-right: 10vw;
     margin-bottom: 50px;
   }
-  .fb-container {
-    max-width: 300px;
-    overflow-x: hidden;
-  }
 }
 
 .nyheder-container  {
