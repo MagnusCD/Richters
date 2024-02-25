@@ -2,8 +2,7 @@ body {
   font-family: bilo, sans-serif;
 }
 
-.fb-like-box {
-  width: fit-content;
+.fb-container {
   overflow-x: scroll;
 }
 
