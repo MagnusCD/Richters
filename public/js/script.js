@@ -57,4 +57,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  function adjustIframeSize() {
+      var iframe = document.querySelector('.fb-like-box iframe'); // Assuming your iframe can be selected this way
+
+      if (!iframe) {
+          return; // Exit if no iframe is found
+      }
+
+      var newWidth = window.innerWidth > 1100 ? '600px' : '300px'; // Determine new width based on viewport
+      iframe.style.width = newWidth; // Set the iframe's width
+  }
+
+  // Adjust iframe size on initial load
+  adjustIframeSize();
+
+  // Adjust iframe size whenever the window is resized
+  window.addEventListener('resize', adjustIframeSize);
+});
 
