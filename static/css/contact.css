@@ -34,7 +34,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    width: 800px;
+    width: 900px;
     column-gap: 50px;
     margin: 0 auto;
 }
@@ -51,7 +51,7 @@ body {
     margin-bottom: 50px;
     height: 700px;
     width: 260px;
-    place-self: center;
+    margin: 0 auto;
 }
 
 .form-container-header {
@@ -185,11 +185,6 @@ form {
         right: 0;
         justify-content: center;
         align-items: center;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    .contact-grid {
     }
 }
 
