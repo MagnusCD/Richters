@@ -50,7 +50,7 @@ function myFunction() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const otherElement = document.querySelector('');
+  const otherElement = document.querySelector('.placeholder');
   const topnavImage = document.querySelector('.topnav-image');
 
   function handleScroll() {
