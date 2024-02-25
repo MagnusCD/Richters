@@ -6,9 +6,7 @@ body {
   margin-top: 100px;
   background-image: url("/images/om-richters-img.jpg");
   background-attachment: fixed;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   background-color: #e5e5f7;
 }
 
