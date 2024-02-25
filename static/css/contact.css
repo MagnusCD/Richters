@@ -185,7 +185,7 @@ form {
     }
 }
 
-@media screen and (mib-width: 1100px) {
+@media screen and (min-width: 1100px) {
     .contact-grid {
       margin-right: 150px;
     }
