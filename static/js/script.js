@@ -51,13 +51,13 @@ function myFunction() {
 
 document.addEventListener('DOMContentLoaded', function () {
   const otherElement = document.querySelector('.om-richters-container');
-  const topnavImage = document.querySelector('.topnav-image');
+  // const topnavImage = document.querySelector('.topnav-image');
 
   function handleScroll() {
     let scrollPosition = window.scrollY;
 
     // Apply an downward movement to the other element. Put a minus before the dollar sign to reverse
-    otherElement.style.transform = `translateY(${scrollPosition * 0}px)`;
+    // otherElement.style.transform = `translateY(${scrollPosition * 0}px)`;
 
     // Apply a downward movement to the hero image
     topnavImage.style.transform = `translateY(${scrollPosition * 0.17}px)`;
