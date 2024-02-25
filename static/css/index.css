@@ -271,6 +271,7 @@ img {vertical-align: middle;}
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 150px;
 }
 
 .slideshow-container h1 {
@@ -288,7 +289,6 @@ img {vertical-align: middle;}
   padding-top: 10px;
   padding-bottom: 10px;
   height: 500px;
-  margin-top: 150px;
 }
 
 .gallery-images {
