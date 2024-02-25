@@ -5,7 +5,7 @@ body {
 .contact-header {
     color: rgb(255, 255, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 250%;
+    font-size: 300%;
     margin-bottom: 50px;
     margin-top: 75px;
     padding-bottom: 5px;
@@ -60,6 +60,7 @@ body {
     color: rgb(255, 255, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .form-stack {
@@ -150,6 +151,7 @@ form {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 
@@ -172,6 +174,7 @@ form {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 
