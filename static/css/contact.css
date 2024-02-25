@@ -36,6 +36,7 @@ body {
     grid-template-rows: 1fr;
     width: 900px;
     column-gap: 50px;
+    row-gap: 100px;
     margin: 0 auto;
 }
 
