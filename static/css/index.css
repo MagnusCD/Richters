@@ -297,7 +297,7 @@ img {vertical-align: middle;}
   height: 400px;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1100px) {
   .gallery-images {
     width: 300px;
     height: 250px;
