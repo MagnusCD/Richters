@@ -326,54 +326,6 @@
 
 
 <script>
-    $(window).resize(function () {
-        var viewportWidth = $(window).width();
-        if (viewportWidth < 1100) {
-        $(".topnav").removeClass("fixed");
-        }
-    });
-</script>
-
-<!--
-<script>
-
-let viewportHeight = window.innerHeight * 0.9;
-let viewportWidth = window.innerWidth;
-
-    $(window).scroll(function(){
-        if($(window).width() > 1300) {
-        if($(window).scrollTop()>viewportHeight) {
-        $('.topnav').addClass("fixed");
-        }
-        else{
-        $('.topnav').removeClass("fixed");
-        }
-        }
-    });
-</script>
--->
-
-<!--
-<script>
-setInterval(function(){
-    let viewportHeight = window.innerHeight * 0.8;
-    let viewportWidth = window.innerWidth;
-
-    $(window).scroll(function(){
-        if($(window).width() > 1300) {
-        if($(window).scrollTop()>viewportHeight) {
-        $('.topnav').addClass("fixed");
-        }
-        else{
-        $('.topnav').removeClass("fixed");
-        }
-        }
-    });
-}, 1000);
-</script>
--->
-
-<script>
 let classAdded = false;
 setInterval(function(){
     let viewportHeight = window.innerHeight * 0.8;
