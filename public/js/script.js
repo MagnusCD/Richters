@@ -37,7 +37,7 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-window.addEventListener("scroll", reveal);
+
 
 document.addEventListener('DOMContentLoaded', function() {
   function updateFacebookBoxWidth() {
