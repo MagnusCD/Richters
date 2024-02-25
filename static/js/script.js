@@ -50,7 +50,7 @@ function myFunction() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const otherElement = document.querySelector('.om-richters-container');
+  const otherElement = document.querySelector('');
   const topnavImage = document.querySelector('.topnav-image');
 
   function handleScroll() {
