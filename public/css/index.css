@@ -152,8 +152,8 @@ body {
     margin-bottom: 50px;
   }
   .fb-container {
-    overflow-x: scroll;
     max-width: 300px;
+    overflow-x: hidden;
   }
 }
 
