@@ -31,7 +31,7 @@ function pureFadeOut(elem){
     }
   })();
 };
-123
+
 function setCookie(name,value,days) {
     var expires = "";
     if (days) {
