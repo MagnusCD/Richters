@@ -1,8 +1,8 @@
 // --- Config --- //
 var purecookieTitle = "Cookies."; // Title
 var purecookieDesc = "Ved at bruge denne hjemmeside, accepterer du samtidigt, at vi gør brug af cookies."; // Description
-var purecookieLink = '<a href="https://www.cssscript.com/privacy-policy/" target="_blank">What for?</a>'; // Cookiepolicy link
-var purecookieButton = "Understood"; // Button text
+var purecookieLink = '<a href="https://www.cssscript.com/privacy-policy/" target="_blank"><!--What for?--></a>'; // Cookiepolicy link
+var purecookieButton = "Forstået"; // Button text
 // ---        --- //
 
 
