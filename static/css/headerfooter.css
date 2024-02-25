@@ -180,12 +180,10 @@ h3 {
     width: 100%;
     background-color: #0e5453;
     border-bottom: 5px solid #f2af47;
-    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     padding-top: 10px;
     height: 100px;
-    box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
 }
 
 .topnav-logo-background .name {
@@ -222,6 +220,10 @@ h3 {
     .name-anno {
         display: none;
     }
+}
+
+.topnav-image {
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
 }
 
 @media screen and (max-width:1100px) {
