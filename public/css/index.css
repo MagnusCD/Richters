@@ -3,6 +3,7 @@ body {
 }
 
 .fb-like-box {
+  width: fit-content;
   overflow-x: scroll;
 }
 
