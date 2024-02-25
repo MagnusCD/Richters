@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     otherElement.style.transform = `translateY(${scrollPosition * 0}px)`;
 
     // Apply a downward movement to the hero image
-    topnavImage.style.transform = `translateY(${scrollPosition * 0.15}px)`;
+    topnavImage.style.transform = `translateY(${scrollPosition * 0.2}px)`;
     
     // Add your custom function here (e.g., myFunction())
     myFunction();
