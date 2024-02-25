@@ -25,6 +25,7 @@ body {
   
   .single-post {
     margin-top: 50px;
+    margin-bottom: 50px;
     height: fit-content;
     min-height: 400px;
     background-color: rgba(255, 255, 255, 0.6);
