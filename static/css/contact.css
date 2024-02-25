@@ -51,7 +51,7 @@ body {
     margin-bottom: 50px;
     height: 700px;
     width: 260px;
-    margin: 0 auto;
+    place-self: center;
 }
 
 .form-container-header {
