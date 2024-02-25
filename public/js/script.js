@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateFacebookBoxWidth() {
       var fbBox = document.querySelector('.fb-like-box');
       if (window.innerWidth > 1300) {
-          fbBox.setAttribute('data-width', '600');
+          fbBox.setAttribute('data-width', '600px');
       } else {
-          fbBox.setAttribute('data-width', '300');
+          fbBox.setAttribute('data-width', '300px');
       }
   }
 
