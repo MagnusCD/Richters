@@ -51,6 +51,7 @@ body {
     margin-bottom: 50px;
     height: 700px;
     width: 260px;
+    margin: 0 auto;
 }
 
 .form-container-header {
@@ -141,6 +142,7 @@ form {
     margin-bottom: 50px;
     height: 700px;
     width: 260px;
+    margin: 0 auto;
 }
 .åbningstider-container-header {
     background-color: #d63f44;
@@ -161,6 +163,7 @@ form {
     margin-bottom: 50px;
     height: 700px;
     width: 260px;
+    margin: 0 auto;
 }
 
 .map-container-header {
@@ -187,7 +190,7 @@ form {
 
 @media screen and (min-width: 1100px) {
     .contact-grid {
-      margin: 0 auto;
+     
     }
 }
 
