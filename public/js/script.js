@@ -38,6 +38,7 @@ function myFunction() {
 }
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
   function updateFacebookBoxWidth() {
       var fbBox = document.querySelector('.fb-like-box');
