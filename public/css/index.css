@@ -5,11 +5,13 @@ body {
 
 
 .om-richters-container {
-  margin-top: 100px;
+  margin-top: 300px;
   background-image: url("/images/om-richters-img.jpg");
   background-attachment: fixed;
 
   background-color: #e5e5f7;
+  
+  width: 80%;
 }
 
 .om-richters-header {
@@ -101,6 +103,7 @@ body {
     background-attachment: scroll;
     background-size: cover;
     object-fit: cover;
+    width: 100%;
   }
   .grid-wrapper {
     margin-left: 0;
