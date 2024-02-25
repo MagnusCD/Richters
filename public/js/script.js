@@ -76,3 +76,33 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', adjustIframeSize);
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const otherElement = document.querySelector('.om-richters-container');
+  const topnavImage = document.querySelector('.topnav-image');
+
+  function handleScroll() {
+    let scrollPosition = window.scrollY;
+
+    // Apply an downward movement to the other element. Put a minus before the dollar sign to reverse
+    otherElement.style.transform = `translateY(${scrollPosition * 0}px)`;
+
+    // Apply a downward movement to the hero image
+    topnavImage.style.transform = `translateY(${scrollPosition * 0.15}px)`;
+    
+    // Add your custom function here (e.g., myFunction())
+    myFunction();
+  }
+
+  // Add a scroll event listener to trigger the handleScroll function
+  window.addEventListener('scroll', handleScroll);
+
+  // Reset scroll position on page load or reload
+  window.addEventListener('load', function () {
+    // Set the scroll position to zero
+    window.scrollTo(0, 0);
+    // Call the handleScroll function to apply transformations at the top of the page
+    handleScroll();
+  });
+});
+
