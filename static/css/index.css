@@ -305,6 +305,7 @@ img {vertical-align: middle;}
   }
   .om-richters-wrapper {
     width: fit-content;
+    margin: 0 auto;
     margin-left: 25px;
     margin-right: 25px;
   }
