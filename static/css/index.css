@@ -308,17 +308,11 @@ img {vertical-align: middle;}
     margin-left: 25px;
     margin-right: 25px;
   }
-  .grid-container-byvandring {
-    width: 100%;
-  }
   .box {
     width: 100%;
   }
   .box p {
     padding: 5px;
-  }
-  .grid-container-byvandring {
-    width: 100%;
   }
 }
 
