@@ -294,6 +294,9 @@ img {vertical-align: middle;}
 
 
 @media (max-width: 1024px) {
+  .om-richters-container {
+    width: 100%;
+  }
   .grid-wrapper {
     width: 95%;
   }
