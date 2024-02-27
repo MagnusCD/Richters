@@ -288,7 +288,10 @@ img {vertical-align: middle;}
 
 
 
-
+@media and (max-width: 1024px) {
+  .grid-wrapper {
+    width: 100%;
+  }
 
 
 
