@@ -358,8 +358,6 @@ img {vertical-align: middle;}
     display: flex;
     flex-direction: column;
     background-image: none;
-    margin-top: 50px;
-
     background-color:rgba(0, 0, 0, 0.6)
   }
   .two {
