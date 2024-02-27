@@ -317,8 +317,8 @@ img {vertical-align: middle;}
   }
   .box p {
     padding: 5px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .grid-container-byvandring {
     column-gap: 0px;
