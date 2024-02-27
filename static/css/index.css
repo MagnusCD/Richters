@@ -321,7 +321,7 @@ img {vertical-align: middle;}
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .om-richters-wrapper, .fb-container, .slideshow-container {
     width: 320px;
   }
