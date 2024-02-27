@@ -318,7 +318,12 @@ img {vertical-align: middle;}
     height: 250px;
   }
   .box {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .grid-container-byvandring {
+    column-gap: 0;
+    row-gap: 0;
   }
 }
 
