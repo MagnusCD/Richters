@@ -39,16 +39,19 @@ body {
 
 @media screen and (max-width:1100px) {
   .om-richters-wrapper {
-    width: 350px;
+    width: 320px;
   }
 
   .om-richters-container {
+    /*
     background-attachment: scroll;
     background-size: cover;
     object-fit: cover;
   }
+  */
+    background-image: none;
+  }
 }
-
 
 
 
@@ -118,7 +121,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 350px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -159,11 +162,13 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+    /*
     background-image: url("/images/byvandring-img.jpg");
     background-attachment: scroll;
     background-size: cover;
     object-fit: cover;
-
+    */
+    background-image: none;
   }
   .grid-container-byvandring h1 {
     margin-bottom: -20px;
@@ -378,7 +383,7 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 1100px) {
     .fb-container, .slideshow-container {
-    width: 350px;
+    width: 320px;
   }
 } 
 
