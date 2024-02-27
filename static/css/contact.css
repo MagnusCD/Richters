@@ -201,5 +201,7 @@ form {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+    .form-container, .map-container, .åbningstider-container {
+        width: 80%;
+      }
 }
