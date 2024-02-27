@@ -304,11 +304,14 @@ img {vertical-align: middle;}
   }
   .om-richters-wrapper {
     width: fit-content;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   .box {
-    width: 80%;
+    width: 85%;
+  }
+  .grid-container-byvandring {
+    column-gap: 5px;
   }
 }
 
