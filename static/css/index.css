@@ -287,19 +287,19 @@ img {vertical-align: middle;}
 
 
 
-@media screen and (max-width:1100px) {
 
 
+
+@media and (max-width: 1024px) {
+  {
+   
+  }
 }
 
 
 
-
-
-
-
 @media (min-width: 768px) and (max-width: 1024px) {
-  .om-richters-wrapper, .fb-container, .slideshow-container {
+  .om-richters-container, .fb-container, .slideshow-container {
     width: 75%;
   }
 }
@@ -316,10 +316,6 @@ img {vertical-align: middle;}
   .gallery-images {
     width: 300px;
     height: 250px;
-  }
-  .box {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 }
 
