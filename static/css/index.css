@@ -30,7 +30,6 @@ body {
   padding-bottom: 25px;
   text-align: center;
 
-  margin: 0 auto;
 
   width: 800px;
   padding-left: 50px;
@@ -294,9 +293,6 @@ img {vertical-align: middle;}
 
 
 @media (max-width: 1024px) {
-  .om-richters-container {
-    width: 100%;
-  }
   .grid-wrapper {
     width: 95%;
   }
