@@ -293,7 +293,7 @@ img {vertical-align: middle;}
 
 @media (max-width: 1024px) {
   .grid-wrapper {
-    width: 100%;
+    width: 95%;
   }
 }
 
