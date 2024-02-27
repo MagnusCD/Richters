@@ -391,10 +391,7 @@ h3 {
     line-height: 100px;
 }
 
-topnav.responsive {
-    margin-right: 20px;
-}
-      
+ 
 .topnav.responsive a {
     display: block;
     height: 80px;
@@ -404,6 +401,7 @@ topnav.responsive {
 @media screen and (max-width: 1100px) {
     .topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
     display: none;
+    margin-right: 20px;     
   }
   .topnav {
     background-color: rgba(255, 255, 255, 0);
