@@ -308,10 +308,10 @@ img {vertical-align: middle;}
     margin-right: 25px;
   }
   .box {
-    width: 85%;
+    width: 80%;
   }
   .grid-container-byvandring {
-    column-gap: 5px;
+    column-gap: 0;
   }
 }
 
