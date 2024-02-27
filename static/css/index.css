@@ -37,21 +37,7 @@ body {
   margin-right: auto;
 }
 
-@media screen and (max-width:1100px) {
-  .om-richters-wrapper {
-    width: 320px;
-  }
 
-  .om-richters-container {
-    /*
-    background-attachment: scroll;
-    background-size: cover;
-    object-fit: cover;
-  }
-  */
-    background-image: none;
-  }
-}
 
 
 
@@ -150,58 +136,7 @@ body {
   background-position: right;
 }
 
-@media screen and (max-width:1100px) {
-  .om-richters-container {
-    width: 100%;
-  }
-  .grid-wrapper {
-    width: 100%;
-  }
 
-  .grid-container-byvandring {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    /*
-    background-image: url("/images/byvandring-img.jpg");
-    background-attachment: scroll;
-    background-size: cover;
-    object-fit: cover;
-    */
-    background-image: none;
-  }
-  .grid-container-byvandring h1 {
-    margin-bottom: -20px;
-    padding-top: 20px;
-  }
-  .box p {
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0)
-  }
-  .one {
-    display: flex;
-    flex-direction: column;
-    background-image: none;
-    margin-top: 50px;
- 
-    background-color:rgba(0, 0, 0, 0.6)
-  }
-  .two {
-    display: flex;
-    flex-direction: column;
-    background-image: none;
- 
-    background-color:rgba(0, 0, 0, 0.6)
-  }
-  .three {
-    display: flex;
-    flex-direction: column;
-    background-image: none;
- 
-    margin-bottom: 50px;
-    background-color:rgba(0, 0, 0, 0.6)
-  }
-}
 
 
 
@@ -306,16 +241,7 @@ img {vertical-align: middle;}
   height: 400px;
 }
 
-@media screen and (max-width:1100px) {
-  .gallery-images {
-    width: 300px;
-    height: 250px;
-  }
 
-  .slideshow-wrapper {
-    height: 400px;
-  }
-}
 
 /* Caption text
 .text {
@@ -375,6 +301,58 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+@media screen and (max-width:1100px) {
+  .om-richters-container {
+    width: 100%;
+  }
+  .grid-wrapper {
+    width: 100%;
+  }
+
+  .grid-container-byvandring {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    /*
+    background-image: url("/images/byvandring-img.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    object-fit: cover;
+    */
+    background-image: none;
+  }
+  .grid-container-byvandring h1 {
+    margin-bottom: -20px;
+    padding-top: 20px;
+  }
+  .box p {
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0)
+  }
+  .one {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    margin-top: 50px;
+ 
+    background-color:rgba(0, 0, 0, 0.6)
+  }
+  .two {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+ 
+    background-color:rgba(0, 0, 0, 0.6)
+  }
+  .three {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+ 
+    margin-bottom: 50px;
+    background-color:rgba(0, 0, 0, 0.6)
+  }
+}
 
 
 
@@ -383,7 +361,35 @@ img {vertical-align: middle;}
 
 
 
-@media only screen and (max-width: 1100px) {
+
+
+
+
+
+@media screen and (max-width:1100px) {
+  .om-richters-wrapper {
+    width: 320px;
+  }
+
+  .om-richters-container {
+    /*
+    background-attachment: scroll;
+    background-size: cover;
+    object-fit: cover;
+  }
+  */
+    background-image: none;
+  }
+  
+  .gallery-images {
+    width: 300px;
+    height: 250px;
+  }
+
+  .slideshow-wrapper {
+    height: 400px;
+  }
+
     .fb-container, .slideshow-container {
     width: 320px;
   }
@@ -399,6 +405,10 @@ img {vertical-align: middle;}
   .grid-wrapper {
     max-width: 768px; /* Limit max width for tablet layout */
     margin: 0 auto;
+  }
+
+  .box {
+    width: 250px;
   }
 
   .grid-container-byvandring {
