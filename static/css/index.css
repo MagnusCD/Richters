@@ -350,14 +350,21 @@ img {vertical-align: middle;}
   }
 }
 
+
+
 @media (max-width: 768px) {
   .om-richters-wrapper, .fb-container, .slideshow-container {
     width: 320px;
   }
-  
+  .om-richters-container {
+    background-image: none;
+  }
   .gallery-images {
     width: 300px;
     height: 250px;
+  }
+  .grid-container-byvandring {
+    width:
   }
 }
 
