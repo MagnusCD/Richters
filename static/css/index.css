@@ -302,11 +302,15 @@ img {vertical-align: middle;}
     margin-left: 25px;
     margin-right: 25px;
   }
+  .grid-container-byvandring {
+    width: 100%;
+    column-gap: 0;
+  }
   .box {
-    width: 80%;
+    width: 90%;
   }
   .box p {
-    padding: 1px;
+    padding: 5px;
   }
   .grid-container-byvandring {
     column-gap: 0px;
