@@ -300,8 +300,14 @@ img {vertical-align: middle;}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .om-richters-container, .fb-container, .slideshow-container {
-    width: 75%;
+    width: 80%;
   }
+  .om-richters-wrapper {
+    width: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
 }
 
 
