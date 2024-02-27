@@ -363,8 +363,8 @@ img {vertical-align: middle;}
     width: 300px;
     height: 250px;
   }
-  .grid-container-byvandring {
-    width:
+  .box {
+    margin: 0;
   }
 }
 
