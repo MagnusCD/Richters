@@ -203,6 +203,28 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .om-richters-container, .fb-container, .slideshow-container {
+    width: 90%; /* Adjust width for tablets */
+    padding: 30px; /* More padding for larger screens */
+  }
+
+  .grid-wrapper {
+    max-width: 768px; /* Limit max width for tablet layout */
+    margin: 0 auto;
+  }
+
+  .grid-container-byvandring {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Grid layout for tablet */
+    gap: 20px; /* Space between grid items */
+  }
+
+  .box, .om-richters-wrapper, .slideshow-wrapper {
+    padding: 20px; /* Adjust padding for readability */
+  }
+}
+
 
 
 
