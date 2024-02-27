@@ -304,6 +304,8 @@ img {vertical-align: middle;}
   }
   .box {
     width: 85%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .grid-container-byvandring {
     column-gap: 0px;
