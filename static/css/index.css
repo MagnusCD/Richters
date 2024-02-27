@@ -321,10 +321,6 @@ img {vertical-align: middle;}
     margin-top: 0;
     margin-bottom: 0;
   }
-  .grid-container-byvandring {
-    column-gap: 0;
-    row-gap: 0;
-  }
 }
 
 
@@ -341,7 +337,7 @@ img {vertical-align: middle;}
   .grid-container-byvandring {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 0px;
     background-image: none;
   }
   .grid-container-byvandring h1 {
