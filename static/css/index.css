@@ -294,6 +294,7 @@ img {vertical-align: middle;}
 @media (max-width: 1024px) {
   .grid-wrapper {
     width: 100%;
+    column-gap: -50px;
   }
 }
 
@@ -321,7 +322,7 @@ img {vertical-align: middle;}
     margin-right: 0px;
   }
   .grid-container-byvandring {
-    column-gap: 0px;
+    column-gap: -50px;
     width: 100%;
   }
 }
