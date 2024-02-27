@@ -301,7 +301,7 @@ img {vertical-align: middle;}
 
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
   .om-richters-container, .fb-container, .slideshow-container {
     width: 80%;
   }
@@ -321,7 +321,7 @@ img {vertical-align: middle;}
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .om-richters-wrapper, .fb-container, .slideshow-container {
     width: 320px;
   }
