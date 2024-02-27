@@ -78,7 +78,7 @@ body {
   }
 
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1024px) {
     .posts-container {
       width: 320px;
     }
@@ -89,3 +89,8 @@ body {
     }
   }
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .posts-container {
+      width: 80%;
+    }
+  }

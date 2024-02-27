@@ -178,7 +178,7 @@ form {
 }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
     .contact-grid {
         display: flex;
         flex-direction: column;
@@ -193,7 +193,7 @@ form {
 }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
     .form-container, .map-container, .åbningstider-container {
       width: 320px;
     }
