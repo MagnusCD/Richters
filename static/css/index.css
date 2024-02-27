@@ -305,6 +305,9 @@ img {vertical-align: middle;}
   .box {
     width: 85%;
   }
+  .box p {
+    padding: 1px;
+  }
   .grid-container-byvandring {
     column-gap: 0px;
     width: 100%;
@@ -350,7 +353,6 @@ img {vertical-align: middle;}
   .box p {
     height: fit-content;
     background-color: rgba(0, 0, 0, 0);
-    padding: 1px;
     margin-left: 0;
     margin-right: 0;
   }
