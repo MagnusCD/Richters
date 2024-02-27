@@ -311,7 +311,7 @@ img {vertical-align: middle;}
     width: 80%;
   }
   .grid-container-byvandring {
-    column-gap: 0;
+    row-gap: 0px;
   }
 }
 
