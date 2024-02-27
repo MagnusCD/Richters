@@ -175,45 +175,6 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<!--
-<center>
-<div class="nyheder-container">
-    <center><h1>Side-nyheder</h1></center>
-    <div class="posts-container">
-        <section class="posts-list">
-            
-            {{ $paginator := .Paginate (where (where .Site.Pages "Section" "nyheder") "IsPage" true) }}
-            {{ range $paginator.Pages }}
-           
-            <article class="single-post border-bottom pb-4">
-                <h2 class="entry-title mb-4">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </h2>
-
-                <div class="post-meta mb-4">
-                    <span class="post-author"> Slået op af: {{ .Params.author }} |</span>
-                    <span class="post-date">
-                        <time>{{ dateFormat .Site.Params.dateFormat .Date }} |</time>
-                    </span>
-              
-                    <br><br>
-
-                <div class="entry-content">
-                    {{ .Summary }}
-                    {{ if .Truncated }}
-                    <a href="{{ .RelPermalink }}">Læs mere...</a>
-                    {{ end }}
-                </div>
-            </article>
-            {{ end }}
-            <div class="pt-4">
-                {{ template "_internal/pagination.html" . }}
-            </div>
-        </section>
-    </div>
-</div>
-</center>
--->
 
 
 <div class="slideshow-container">
@@ -223,27 +184,15 @@
     <div class="slideshow-wrapper">
 
         <div class="mySlides fade">
-            <!--
-            <div class="numbertext">1 / 3</div>
-            -->
             <center><img class="gallery-images" src="/images/gallery-img1.jpg"></center>
-            <!--<div class="text">Caption Text</div>-->
         </div>
         
         <div class="mySlides fade">
-            <!--
-            <div class="numbertext">2 / 3</div>
-            -->
             <center><img class="gallery-images" src="/images/gallery-img2.jpg"></center>
-            <!--<div class="text">Caption Text</div>-->
         </div>
         
         <div class="mySlides fade">
-            <!--
-            <div class="numbertext">3 / 3</div>
-            -->
             <center><img class="gallery-images" src="/images/gallery-img3.jpg"></center>
-           <!--<div class="text">Caption Text</div>-->
         </div>
 
         <div class="mySlides fade">
@@ -271,21 +220,6 @@
         </div>
     </div>
 </div>
-
-
-<!--
-<div class="åbningstider-container">
-    <h1>Åbningstider</h1>
-    <h2>
-    Mandag: <br> 11:00 - 19:00  <br><br>
-    Tirsdag:<br> 11:00 - 19:00 <br><br>
-    Onsdag: <br>11:00 - 19:00 <br><br>
-    Torsdag: <br>11:00 - 19:00 <br><br>
-    Fredag:<br> 11:00 - 23:00 <br><br>
-  </h2>
-</div>
--->
-
 
 
 </main>
@@ -333,44 +267,7 @@
     });
 </script>
 
-<!--
-<script>
 
-let viewportHeight = window.innerHeight * 0.9;
-let viewportWidth = window.innerWidth;
-
-    $(window).scroll(function(){
-        if($(window).width() > 1300) {
-        if($(window).scrollTop()>viewportHeight) {
-        $('.topnav').addClass("fixed");
-        }
-        else{
-        $('.topnav').removeClass("fixed");
-        }
-        }
-    });
-</script>
--->
-
-<!--
-<script>
-setInterval(function(){
-    let viewportHeight = window.innerHeight * 0.8;
-    let viewportWidth = window.innerWidth;
-
-    $(window).scroll(function(){
-        if($(window).width() > 1300) {
-        if($(window).scrollTop()>viewportHeight) {
-        $('.topnav').addClass("fixed");
-        }
-        else{
-        $('.topnav').removeClass("fixed");
-        }
-        }
-    });
-}, 1000);
-</script>
--->
 
 <script>
 let classAdded = false;
