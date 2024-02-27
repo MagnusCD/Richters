@@ -370,16 +370,6 @@ img {vertical-align: middle;}
   .om-richters-wrapper {
     width: 320px;
   }
-
-  .om-richters-container {
-    /*
-    background-attachment: scroll;
-    background-size: cover;
-    object-fit: cover;
-  }
-  */
-    background-image: none;
-  }
   
   .gallery-images {
     width: 300px;
@@ -400,6 +390,10 @@ img {vertical-align: middle;}
   .om-richters-container, .fb-container, .slideshow-container {
     width: 90%; /* Adjust width for tablets */
     padding: 30px; /* More padding for larger screens */
+  }
+
+  .om-richters-container {
+    background-image: none;
   }
 
   .grid-wrapper {
