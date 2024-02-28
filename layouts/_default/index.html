@@ -262,35 +262,43 @@
 
 
 <script>
-    $(window).resize(function () {
-        var viewportWidth = $(window).width();
-        if (viewportWidth < 1100) {
-        $(".topnav").removeClass("fixed");
+    $(document).ready(function() {
+        let classAdded = false;
+    
+        // Function to check and apply the fixed class based on conditions
+        function checkAndApplyFixedClass() {
+            let viewportHeight = window.innerHeight * 0.8;
+            let viewportWidth = $(window).width();
+    
+            // Adjust the condition to check if the viewport is wider than 1100px
+            if (viewportWidth > 1100) {
+                if ($(window).scrollTop() > viewportHeight && !classAdded) {
+                    $('.topnav').addClass("fixed");
+                    classAdded = true;
+                } else if ($(window).scrollTop() <= viewportHeight && classAdded) {
+                    $('.topnav').removeClass("fixed");
+                    classAdded = false;
+                }
+            } else {
+                // Ensure the class is removed when the viewport is narrower than 1100px
+                if (classAdded) {
+                    $('.topnav').removeClass("fixed");
+                    classAdded = false;
+                }
+            }
         }
+    
+        // Listen for scroll events
+        $(window).scroll(checkAndApplyFixedClass);
+    
+        // Listen for resize events
+        $(window).resize(function() {
+            // Call the function on resize to re-evaluate the need for the "fixed" class
+            checkAndApplyFixedClass();
+        });
     });
 </script>
-
-
-
-<script>
-let classAdded = false;
-setInterval(function(){
-    let viewportHeight = window.innerHeight * 0.8;
-    let viewportWidth = window.innerWidth;
-    $(window).scroll(function(){
-        if($(window).width() > 1100) {
-        if($(window).scrollTop()>viewportHeight && !classAdded) {
-        $('.topnav').addClass("fixed");
-        classAdded = true;
-        }
-        else if($(window).scrollTop()<=viewportHeight && classAdded){
-        $('.topnav').removeClass("fixed");
-        classAdded = false;
-        }
-        }
-    });
-}, 1000);
-</script>
+    
 
 <script>
     let slideIndex = 0;
