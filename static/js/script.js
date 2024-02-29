@@ -102,20 +102,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName("gallery-images");
 var modalImg = document.getElementById("img01");
 
-// Get all images with the class "gallery-images" and attach the click event to them
-var images = document.getElementsByClassName('gallery-images');
-var captionText = document.getElementById("caption");
-for (var i = 0; i < images.length; i++) {
-    images[i].onclick = function(){
+for (var i = 0; i < img.length; i++) {
+    img[i].onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
-        modalImg.alt = this.alt;
-        captionText.innerHTML = this.alt; // If you want to use the alt attribute as a caption
     }
 }
 
