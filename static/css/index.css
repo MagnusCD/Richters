@@ -253,6 +253,7 @@ body {
  
   .om-richters-wrapper {
     background-color: white;
+    border-radius: 0;
   }
   .om-richters-wrapper p {
     color: black;
