@@ -308,7 +308,5 @@ body {
     flex-direction: column;
     background-image: none;
     background-color:rgb(255, 255, 255);
-    border-bottom-left-radius: 20px; 
-    border-bottom-right-radius: 20px;
   }
 }
