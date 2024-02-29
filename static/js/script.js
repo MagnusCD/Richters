@@ -100,35 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
 */
 
 
-<script>
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent the default form submission
 
-    const form = this;
-    const data = new FormData(form);
-
-    fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        // Display the success message
-        document.getElementById('successMessage').style.display = 'block';
-        // Optionally, reset the form or perform other actions
-        form.reset();
-      } else {
-        // Handle errors or unsuccessful submissions
-        alert('There was a problem with your submission. Please try again.');
-      }
-    }).catch(error => {
-      console.error('Error:', error);
-      alert('An error occurred while submitting the form. Please try again.');
-    });
-  });
-</script>
 
 
 
