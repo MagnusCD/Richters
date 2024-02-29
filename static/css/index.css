@@ -2,6 +2,18 @@ body {
   font-family: bilo, sans-serif;
 }
 
+.topnav-image {
+  background-color: #0e5453;
+  background-color: #f2af47;
+  padding-bottom: 50px;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+}
+
+.topnav-image-wrapper {
+    background-image: linear-gradient(to bottom, #f2af47, #0e5453);
+}
+  
 .om-richters-container {
   margin: 0 auto;
   background-image: url("/images/om-richters-img.jpg");
@@ -12,31 +24,46 @@ body {
   
   width: 1000px;
 
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
-
-.om-richters-header {
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  background-color:rgba(255, 255, 255, 0);
-
-  text-align: center;
-}
 
 .om-richters-wrapper {
   background-color: rgba(0, 0, 0, 0.6);
-  padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
-
   margin: 0 auto;
- 
   width: 800px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
+
+.om-richters-wrapper p {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin: 0 auto;
+  padding-top: 20px;
+  color: white;
+}
+
+
+
+
+
+
+
+.om-richters-header, .byvandring-header {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-color: #d63f44;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.byvandring-header {
+  width: 1000px;
+}
 
 
 
@@ -59,7 +86,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  width: 800px;
+  width: 1000px;
 }
 
 
@@ -71,11 +98,6 @@ body {
   justify-content: center;
 }
 
-.byvandring-header{
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  text-align: center;
-}
 
 .box p {
   color: rgb(255, 255, 255);
@@ -140,11 +162,11 @@ body {
 
 
 
-
+/*
 .fb-container {
   margin-top: 150px;
   width: 800px;
-  /*box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);*/
+  box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.6);
   margin-left: auto;
   margin-right: auto;
@@ -161,14 +183,18 @@ body {
   margin-bottom: 0;
   text-align: center;
 }
+*/
 
 
 
 
 
 
-
-
+@media (min-width: 1024px) {
+  .grid-wrapper, .om-richters-container {
+    margin-top: 200px;
+  }
+}
 
 
 
@@ -177,6 +203,10 @@ body {
 @media (max-width: 1024px) {
   .grid-wrapper {
     width: 95%;
+  }
+  .om-richters-wrapper p {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
@@ -198,21 +228,41 @@ body {
   .box p {
     padding: 5px;
   }
+
+  .om-richters-header {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin: 0 auto;
+  }
+  .byvandring-header {
+    width: 100%;
+    margin: 0 auto;
+  }
+
 }
 
 
 
 @media (max-width: 768px) {
-  .om-richters-wrapper, .fb-container {
+  .om-richters-wrapper, .fb-container, .byvandring-header, .om-richters-header {
     width: 320px;
+    margin: 0 auto;
   }
+ 
+  .om-richters-wrapper {
+    background-color: white;
+  }
+  .om-richters-wrapper p {
+    color: black;
+    text-shadow: none;
+  }
+  .box p {
+    color: black;
+  }
+
   .om-richters-container {
     background-image: none;
   }
-  .gallery-images {
-    width: 300px;
-    height: 250px;
-  }
 
 
 
@@ -220,7 +270,7 @@ body {
 
 
   .om-richters-container {
-    width: 100%;
+    width: 100%; 
   }
   .grid-wrapper {
     width: 100%;
@@ -232,13 +282,9 @@ body {
     row-gap: 0px;
     background-image: none;
   }
-  .grid-container-byvandring h1 {
-    margin-bottom: -20px;
-    padding-top: 20px;
-  }
   .box p {
     height: fit-content;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
     margin-left: 0;
     margin-right: 0;
   }
@@ -246,21 +292,19 @@ body {
     display: flex;
     flex-direction: column;
     background-image: none;
-    background-color:rgba(0, 0, 0, 0.6)
+    background-color:rgb(255, 255, 255)
   }
   .two {
     display: flex;
     flex-direction: column;
     background-image: none;
 
-    background-color:rgba(0, 0, 0, 0.6)
+    background-color:rgb(255, 255, 255)
   }
   .three {
     display: flex;
     flex-direction: column;
     background-image: none;
-
-    margin-bottom: 50px;
-    background-color:rgba(0, 0, 0, 0.6)
+    background-color:rgb(255, 255, 255)
   }
 }
