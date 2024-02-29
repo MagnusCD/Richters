@@ -61,7 +61,15 @@ h3 {
 }
 
 @keyframes jump {
-    100% { transform: translate(0%, -10%); }
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 @keyframes fadeIn {
@@ -354,7 +362,7 @@ h3 {
     width: 60%;
     transform: scaleX(0);
     height: 10px;
-    bottom: 0;
+    margin-top: -15px;
     left: 0;
     background-color: #00b295;
     transform-origin: bottom right;
@@ -444,6 +452,8 @@ h3 {
   }
 }
 
+
+
 /* Style the header: fixed position (always stay at the top) */
 .header {
     position: fixed;
@@ -511,14 +521,19 @@ h3 {
 
 
 .footer {
-    background: #b92f2c;
+    background: #0e5453;
     width: 100%;
     z-index: 3;
     display: flex;
     flex-direction: column;
 }
 
-.fa-facebook-square:hover, .fa-instagram:hover, .fa-envelope:hover {
+.fa-facebook-square:hover, .fa-instagram:hover, .fa-envelope:hover, .social-icon:hover {
+    animation: jump 1s;
+    scale: 1.1;
+}
+
+.topnav-button1:hover, .topnav-button2:hover, .topnav-button3:hover, .topnav-button4:hover, .topnav-button5:hover {
     animation: jump 1s;
     scale: 1.1;
 }
@@ -538,13 +553,15 @@ h3 {
     font-weight: 400;
 }
 
-.fa-facebook-square {
-    margin-right: 25px;
+.social-icon {
+    width: 45px;
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-left: 20px;  /* Adjust margin as needed */
+    margin-top: 10px;
 }
 
-.fa-instagram {
-    margin-left:  25px;
-}
+
+
 
 .mail-container {
     display: flex;
@@ -586,5 +603,5 @@ h3 {
 
 .footer, .push {
     margin-top: -100px;
-    height: 250px;
+    height: 260px;
 }
