@@ -406,6 +406,11 @@ h3 {
     line-height: 80px;
 }
 
+.topnav-button1:hover, .topnav-button2:hover, .topnav-button3:hover, .topnav-button4:hover, .topnav-button5:hover {
+    animation: jump 1s;
+    scale: 1.1;
+}
+
 @media screen and (max-width: 1100px) {
     .topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
     display: none;
@@ -533,10 +538,7 @@ h3 {
     scale: 1.1;
 }
 
-.topnav-button1:hover, .topnav-button2:hover, .topnav-button3:hover, .topnav-button4:hover, .topnav-button5:hover {
-    animation: jump 1s;
-    scale: 1.1;
-}
+
 
 .footer-btn1, .footer-btn2 {
     border: none;
