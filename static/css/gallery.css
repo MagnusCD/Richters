@@ -30,15 +30,11 @@ img {
     text-align: center;
     margin-bottom: 0;
     padding: 10px;
-    border-top-left-radius: 20px; 
-    border-top-right-radius: 20px;
 }
 
 .slideshow-wrapper {
     background-color: rgba(255, 255, 255, 0.6);
     padding-bottom: 10px;
-    border-bottom-left-radius: 20px; 
-    border-bottom-right-radius: 20px;
 }
 
 .gallery-images {
