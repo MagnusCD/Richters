@@ -68,61 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-/*
-document.addEventListener('DOMContentLoaded', function () {
-  const otherElement = document.querySelector('.om-richters-container');
-  const topnavImage = document.querySelector('.topnav-image');
-
-  function handleScroll() {
-    let scrollPosition = window.scrollY;
-
-    // Apply an downward movement to the other element. Put a minus before the dollar sign to reverse
-    otherElement.style.transform = `translateY(${scrollPosition * 0}px)`;
-
-    // Apply a downward movement to the hero image
-    topnavImage.style.transform = `translateY(${scrollPosition * 0.17}px)`;
-    
-    // Add your custom function here (e.g., myFunction())
-    myFunction();
-  }
-
-  // Add a scroll event listener to trigger the handleScroll function
-  window.addEventListener('scroll', handleScroll);
-
-  // Reset scroll position on page load or reload
-  window.addEventListener('load', function () {
-    // Set the scroll position to zero
-    window.scrollTo(0, 0);
-    // Call the handleScroll function to apply transformations at the top of the page
-    handleScroll();
-  });
-});
-*/
-
-
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName("gallery-images");
-var modalImg = document.getElementById("img01");
-
-for (var i = 0; i < img.length; i++) {
-    img[i].onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-
 
 
 
