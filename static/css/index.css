@@ -54,17 +54,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .grid-wrapper {
   margin-top: 150px;
   margin-left: auto;
@@ -152,28 +141,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .fb-container {
   margin-top: 150px;
   width: 800px;
@@ -193,90 +160,6 @@ body {
   padding: 5px;
   margin-bottom: 0;
   text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  /*box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);*/
-  position: relative;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 150px;
-}
-
-.slideshow-container h1 {
-  background-color: #d63f44;
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  padding: 5px;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.slideshow-wrapper {
-  background-color: rgba(255, 255, 255, 0.6);
-  height: fit-content;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: fit-content;
-}
-
-.gallery-images {
-  width: 500px;
-  height: 400px;
-}
-
-
-
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  padding-bottom: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-  
-.active {
-  background-color: #717171;
-}
-  
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 5s;
-}
-  
-@keyframes fade {
-  from {opacity: .6} 
-  to {opacity: 1}
-}
-  
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px
-  }
 }
 
 
