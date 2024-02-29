@@ -40,6 +40,8 @@ img {
 .gallery-images {
     width: 600px;
     height: 450px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* Dots/Bullets/Indicators */
