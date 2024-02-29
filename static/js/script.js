@@ -101,6 +101,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// Assuming you're using a modal to display the enlarged image
+function enlargeImage() {
+  // Add click event listener to all images with the class 'gallery-images'
+  document.querySelectorAll('.gallery-images').forEach(item => {
+    item.addEventListener('click', function() {
+      // Assuming there's a modal element with the class 'modal-background'
+      var modal = document.querySelector('.modal-background');
+      var modalImg = document.querySelector('.modal-content'); // The image inside the modal
+      modal.style.display = "block";
+      modalImg.src = this.src; // Set the source of the modal image to the clicked image's source
+    });
+  });
+
+  // Assuming there's a close button inside the modal with the class 'close'
+  var closeButton = document.querySelector('.close');
+  closeButton.onclick = function() {
+    var modal = document.querySelector('.modal-background');
+    modal.style.display = "none";
+  }
+}
+
+// Call the function to activate the functionality
+window.onload = enlargeImage;
+
+
 
 
 
