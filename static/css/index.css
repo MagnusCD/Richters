@@ -183,7 +183,7 @@ body {
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .om-richters-container, .fb-container, .slideshow-container {
+  .om-richters-container, .fb-container {
     width: 80%;
   }
   .om-richters-wrapper {
@@ -203,7 +203,7 @@ body {
 
 
 @media (max-width: 768px) {
-  .om-richters-wrapper, .fb-container, .slideshow-container {
+  .om-richters-wrapper, .fb-container {
     width: 320px;
   }
   .om-richters-container {
