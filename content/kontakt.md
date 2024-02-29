@@ -1,5 +1,5 @@
 ---
-layout: "contact"
+layout: "kontakt"
 title: "Kontakt Os | Richters Ølstue"
 ---
 

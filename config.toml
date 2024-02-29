@@ -6,7 +6,7 @@ summaryLength = 40
 
 [[menu.main]]
 name = "Kontakt Os | Richters Ølstue"
-url = "/contact"
+url = "/kontakt"
 weight = 2
 
 [[menu.main]]
