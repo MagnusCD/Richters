@@ -3,8 +3,6 @@ body {
 }
 
 .topnav-image {
-  background-color: #00b295;
-  padding-bottom: 20px;
   clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
 }
 
