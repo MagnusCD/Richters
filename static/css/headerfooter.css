@@ -515,6 +515,8 @@ h3 {
 .control-report {
     font-family: bilo, sans-serif;
     background-color: rgb(248, 239, 222);
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
