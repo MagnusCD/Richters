@@ -2,13 +2,10 @@ body {
   font-family: bilo, sans-serif;
 }
 
-.topnav-image {
-  clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
-}
-
 .topnav-image-wrapper {
   background-image: linear-gradient(to bottom, #f2af47, #0e5453);
   padding-bottom: 80px;
+
 }
   
 .om-richters-container {
