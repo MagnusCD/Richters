@@ -17,8 +17,9 @@ h2, h3, p {
 .form-container-header, .åbningstider-container-header, .map-container-header {
     background-color: #d63f44;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-top: 5px;
+    margin-bottom: 10px;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
@@ -53,8 +54,8 @@ h2, h3, p {
 form {
     text-align: center;
     font-family: bilo, sans-serif;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
