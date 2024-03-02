@@ -1,6 +1,4 @@
-body {
-  font-family: bilo, sans-serif;
-}
+
 
 .arrangementer-header {
   color: rgb(255, 255, 255);
@@ -8,6 +6,8 @@ body {
   font-size: 300%;
   margin-top: 75px;
   padding-bottom: 5px;
+  font-family: bilo, sans-serif;
+
 }
 
 .posts-container {
@@ -28,17 +28,20 @@ body {
     margin-bottom: 100px;
     height: fit-content;
     min-height: 400px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: white;
     /*box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);*/
+    font-family: bilo, sans-serif;
+
   }
 
   .entry-title {
     color: white;
     text-decoration: none;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     background-color: #d63f44;
     font-size: 250%;
     padding-bottom: 5px;
+    padding-top: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
   }
 
   .entry-content, .post-date {

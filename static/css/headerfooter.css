@@ -7,6 +7,8 @@ body {
     background-color: rgb(248, 239, 222);
     font-family: bilo, sans-serif;
     font-family: 'Roboto';
+    font-family: "Lucida Console", "Courier New", monospace;
+
     /*
     font-family: jaf-herb, serif;
     */
@@ -298,6 +300,7 @@ h3 {
 
 
 .contact {
+    font-family: bilo, sans-serif;
     position: absolute;
     top: 50vh;
     z-index: 1;
@@ -510,7 +513,8 @@ h3 {
 
 
 .control-report {
-    background-color: #fefee2;
+    font-family: bilo, sans-serif;
+    background-color: rgb(248, 239, 222);
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -557,9 +561,24 @@ h3 {
 
 .social-icon {
     width: 45px;
-    margin-right: 20px; /* Adjust margin as needed */
-    margin-left: 20px;  /* Adjust margin as needed */
+    margin-right: 50px; /* Adjust margin as needed */
+    margin-left: 50px;  /* Adjust margin as needed */
     margin-top: 10px;
+}
+
+.icon-bg {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 

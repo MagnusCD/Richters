@@ -1,11 +1,11 @@
 body {
   font-family: bilo, sans-serif;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .topnav-image-wrapper {
   background-image: linear-gradient(to bottom, #f2af47, #0e5453);
   padding-bottom: 80px;
-
 }
   
 .om-richters-container {
@@ -21,7 +21,7 @@ body {
 
 
 .om-richters-wrapper {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(255, 255, 255);
   padding-bottom: 25px;
   text-align: center;
   margin: 0 auto;
@@ -36,8 +36,8 @@ body {
   margin-right: 50px;
   margin: 0 auto;
   padding-top: 20px;
-  color: white;
-
+  color: black;
+  font-family: bilo, sans-serif;
 }
 
 
@@ -48,7 +48,9 @@ body {
 
 .om-richters-header, .byvandring-header {
   color: white;
+  /*
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  */
   background-color: #d63f44;
   margin: 0;
   text-align: center;
@@ -95,13 +97,17 @@ body {
 
 
 .box p {
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: rgba(0, 0, 0, 0.6);
   height: 550px;
-  margin-right: 5px;
-  margin-left: 5px;
-  padding: 10px;
-  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: bilo, sans-serif;
 }
 
 
@@ -109,7 +115,12 @@ body {
 .box h2 {
   color: rgb(255, 255, 255);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
-  padding-top: 20px;
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .box  {
@@ -119,6 +130,7 @@ body {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 30px;
 }
 
 .one {
@@ -285,6 +297,9 @@ body {
     background-color: rgb(255, 255, 255);
     margin-left: 0;
     margin-right: 0;
+  }
+  .box h2 {
+    background-color: white;
   }
   .one {
     display: flex;

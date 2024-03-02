@@ -1,6 +1,11 @@
-body {
+h2, h3, p {
     font-family: bilo, sans-serif;
 }
+
+h1 {
+    font-family: bilo, sans-serif;
+}
+
 
 .contact-header {
     color: rgb(255, 255, 255);
@@ -9,25 +14,19 @@ body {
     margin-bottom: 50px;
     margin-top: 75px;
     padding-bottom: 5px;
+    font-family: bilo, sans-serif;
 }
 
-.line {
-    margin-right: 20px;
-    height: 55px;
-    width: 5px;
-    background-color: #00b295;
-    /*
-    margin-left: 100px;
-    float: left;
-    position: sticky;
-    */
+
+.form-container-header, .åbningstider-container-header, .map-container-header {
+    background-color: #d63f44;
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
-.line-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
 
 
 .contact-grid {
@@ -38,6 +37,7 @@ body {
     column-gap: 50px;
     row-gap: 100px;
     margin: 0 auto;
+    
 }
 
 
@@ -54,39 +54,15 @@ body {
     width: 260px;
     margin: 0 auto;
 }
-
-.form-container-header {
-    background-color: #d63f44;
-    color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-.form-stack {
-    display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Center the form elements */
 form {
     text-align: center;
+    font-family: bilo, sans-serif;
 }
+
 
 /* Style form inputs and textarea */
 .form-stack {
+    display: block;
     width: 100%;
     padding: 15px;
     margin: 10px 0;
@@ -146,13 +122,27 @@ form {
     width: 260px;
     margin: 0 auto;
 }
-.åbningstider-container-header {
-    background-color: #d63f44;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    padding-bottom: 5px;
-    padding-top: 5px;
+
+
+
+.line {
+    margin-right: 20px;
+    height: 55px;
+    width: 5px;
+    background-color: #00b295;
+    /*
+    margin-left: 100px;
+    float: left;
+    position: sticky;
+    */
 }
+
+.line-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 
 
@@ -169,13 +159,7 @@ form {
     margin: 0 auto;
 }
 
-.map-container-header {
-    background-color: #d63f44;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
+
 
 
 @media screen and (max-width: 1024px) {
