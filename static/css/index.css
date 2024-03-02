@@ -321,3 +321,9 @@ body {
     background-color:rgb(255, 255, 255);
   }
 }
+
+
+
+.social-icon {
+  margin-left: -50px;  /* Adjust margin as needed */
+}
