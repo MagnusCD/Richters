@@ -1,4 +1,5 @@
 
+
 .topnav {
     position: absolute;
     top: 100px;
@@ -38,7 +39,7 @@
 }
 
 .wrapper {
-    margin-bottom: 600px;
+    margin-bottom: 200px;
 }
 
 img {
