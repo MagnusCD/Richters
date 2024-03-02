@@ -4,10 +4,10 @@ body {
 }
 
 .topnav-image-wrapper {
-  background-image: linear-gradient(to bottom, #f2af47, #0e5453);
-  padding-bottom: 80px;
+  background-image: linear-gradient(to bottom, #f2af47, #fbf9f2);
+  padding-bottom: 125px;
 }
-  
+
 .om-richters-container {
   margin: 0 auto;
   background-image: url("/images/om-richters-img.jpg");
@@ -21,7 +21,7 @@ body {
 
 
 .om-richters-wrapper {
-  background-color: rgb(255, 255, 255);
+  background-color: #fbf9f2;
   padding-bottom: 25px;
   text-align: center;
   margin: 0 auto;
@@ -79,7 +79,7 @@ body {
 
 
 .grid-wrapper {
-  margin-top: 175px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -259,7 +259,6 @@ body {
   }
  
   .om-richters-wrapper {
-    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 0;
   }
   .om-richters-wrapper p {
@@ -294,31 +293,30 @@ body {
   }
   .box p {
     height: fit-content;
-    background-color: rgb(255, 255, 255);
+    background-color: #fbf9f2;
     margin-left: 0;
     margin-right: 0;
   }
   .box h2 {
-    background-color: white;
+    background-color: #fbf9f2;
   }
   .one {
     display: flex;
     flex-direction: column;
     background-image: none;
-    background-color:rgb(255, 255, 255)
+    background-color: #fbf9f2;
   }
   .two {
     display: flex;
     flex-direction: column;
     background-image: none;
-
-    background-color:rgb(255, 255, 255)
+    background-color: #fbf9f2;
   }
   .three {
     display: flex;
     flex-direction: column;
     background-image: none;
-    background-color:rgb(255, 255, 255);
+    background-color: #fbf9f2;
   }
 }
 
