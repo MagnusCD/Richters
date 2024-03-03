@@ -1,4 +1,14 @@
-
+.back-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 50px;
+}
 
 .arrangementer-header {
   color: rgb(255, 255, 255);
@@ -9,7 +19,7 @@
   font-family: bilo, sans-serif;
 }
 
-.posts-container {
+.posts-container, .single-post-container {
   width: 800px;
 }
 
@@ -41,6 +51,11 @@
     padding-bottom: 5px;
     padding-top: 10px;
     font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .entry-title a {
+    color: white;
+    text-decoration: none;
   }
 
   .entry-content, .post-date {
@@ -82,7 +97,7 @@
 
 
   @media screen and (max-width: 1024px) {
-    .posts-container {
+    .posts-container, .single-post-container {
       width: 320px;
     }
     .events-container img {
@@ -93,7 +108,7 @@
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    .posts-container {
+    .posts-container, .single-post-container {
       width: 80%;
     }
   }
