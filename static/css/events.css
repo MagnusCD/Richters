@@ -1,6 +1,6 @@
 .back-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: rgb(13, 110, 253);
   color: white;
   text-decoration: none;
   border: none;
@@ -11,6 +11,10 @@
   position: relative;
   left: 0;
   font-family: bilo, sans-serif;
+}
+
+.back-button:hover {
+  opacity: 0.9;
 }
 
 .fa-arrow-left {
