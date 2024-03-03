@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     min-height: 100vh;
@@ -38,7 +40,8 @@ h3 {
     min-height: 100%;
     z-index: -1;
     transform: translateZ(-1px) scale(1.5);
-    transition: transform 0.3s ease-out; /* Add a smooth transition */
+    transition: transform 0.3s ease-out;
+    /* Add a smooth transition */
 }
 
 @media screen and (min-width: 1100px) {
@@ -51,6 +54,7 @@ h3 {
     #richters-bg {
         display: none;
     }
+
     #bg-mobile {
         position: fixed;
         top: 0;
@@ -65,102 +69,113 @@ h3 {
     0% {
         transform: translateY(0%);
     }
+
     50% {
         transform: translateY(-10%);
     }
+
     100% {
         transform: translateY(0%);
     }
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .reveal {
     position: relative;
     opacity: 0;
 }
-  
+
 .reveal.active {
     opacity: 1;
 }
-  
+
 .active.fade-left {
     animation: fade-left 1s ease-in;
 }
-  
+
 .active.fade-right {
     animation: fade-right 1s ease-in;
 }
-  
+
 .active.fade-bottom {
     animation: fade-bottom 1s ease-in;
 }
 
 @keyframes fade-left {
     0% {
-      transform: translateX(-50px);
-      opacity: 0;
+        transform: translateX(-50px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
 }
-  
+
 @keyframes fade-right {
     0% {
-      transform: translateX(50px);
-      opacity: 0;
+        transform: translateX(50px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
 }
-  
+
 @keyframes fade-bottom {
     0% {
-      transform: translateY(50px);
-      opacity: 0;
+        transform: translateY(50px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 /*Width and track */
 ::-webkit-scrollbar {
     width: 5px;
-    background:rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     border-radius: 10px;
 }
-    
+
 /*Handle*/
 ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
 
-.rotate{
+.rotate {
     -moz-transition: all 0.5s linear;
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
-  
-.rotate.down{
-    -moz-transform:rotate(-450deg);
-    -webkit-transform:rotate(-450deg);
-    transform:rotate(-450deg);
+
+.rotate.down {
+    -moz-transform: rotate(-450deg);
+    -webkit-transform: rotate(-450deg);
+    transform: rotate(-450deg);
 }
 
 @keyframes growDown {
     0% {
         transform: scaleY(0)
     }
+
     100% {
         transform: scaleY(1)
     }
@@ -209,7 +224,7 @@ h3 {
 .topnav-logo-background .anno {
     position: absolute;
     margin-left: 280px;
-    
+
 
     margin-top: 50px;
 
@@ -220,10 +235,11 @@ h3 {
 
 @media screen and (min-width:1100px) {
     .topnav-image {
-    height: 100vh;
-    object-fit: cover;
-    object-position: 1 0;
-    transition: transform 0.3s ease-out; /* Add a smooth transition */
+        height: 100vh;
+        object-fit: cover;
+        object-position: 1 0;
+        transition: transform 0.3s ease-out;
+        /* Add a smooth transition */
     }
 
     .name-anno {
@@ -233,20 +249,24 @@ h3 {
 
 @media screen and (max-width:1100px) {
     .topnav-image {
-    object-fit: cover;
-    height: 78vh;
+        object-fit: cover;
+        height: 78vh;
     }
+
     .topnav-logo {
-    outline: none;
-    height: 55px;
-    width: 55px;
+        outline: none;
+        height: 55px;
+        width: 55px;
     }
+
     .topnav-logo-background .name {
-        display:  none;
+        display: none;
     }
+
     .topnav-logo-background .anno {
         display: none;
     }
+
     .name-anno {
         display: flex;
         justify-content: center;
@@ -270,10 +290,10 @@ h3 {
     background-color: #00000086;
     height: 100px;
     width: 100%;
-    position:absolute;
+    position: absolute;
     top: 80vh;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -282,13 +302,13 @@ h3 {
 
 @media screen and (min-width: 1100px) {
     .topnav.fixed {
-    background-color: #0e5453;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 4;
-    transition: background .5s ease-out;
-    box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
+        background-color: #0e5453;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 4;
+        transition: background .5s ease-out;
+        box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
     }
 }
 
@@ -309,9 +329,9 @@ h3 {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0);
 
-    
+
     border: 3px solid white;
- 
+
 
     display: flex;
     left: 0;
@@ -330,20 +350,25 @@ h3 {
 }
 
 
-.contact a:link, .contact a:visited{
+.contact a:link,
+.contact a:visited {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 1100px) {
     .contact {
-    display: none;
+        display: none;
     }
 }
 
 
 
-.topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
+.topnav-button1,
+.topnav-button2,
+.topnav-button3,
+.topnav-button4,
+.topnav-button5 {
     width: 200px;
     height: 100px;
     font-size: 200%;
@@ -382,12 +407,14 @@ h3 {
     transform-origin: bottom left;
 }
 
-.topnav a:link, .topnav a:visited{
+.topnav a:link,
+.topnav a:visited {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-.btn-active a:visited, .btn-active a:link {
+.btn-active a:visited,
+.btn-active a:link {
     color: #f2af47;
 }
 
@@ -401,62 +428,75 @@ h3 {
     line-height: 100px;
 }
 
- 
+
 .topnav.responsive a {
     display: block;
     height: 80px;
     line-height: 80px;
 }
 
-.topnav-button1:hover, .topnav-button2:hover, .topnav-button3:hover, .topnav-button4:hover, .topnav-button5:hover {
+.topnav-button1:hover,
+.topnav-button2:hover,
+.topnav-button3:hover,
+.topnav-button4:hover,
+.topnav-button5:hover {
     animation: jump 1s;
     scale: 1.1;
 }
 
 @media screen and (max-width: 1100px) {
-    .topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
-    display: none;
-    margin-right: 20px;
-  }
-  .topnav {
-    background-color: rgba(255, 255, 255, 0);
+
+    .topnav-button1,
+    .topnav-button2,
+    .topnav-button3,
+    .topnav-button4,
+    .topnav-button5 {
+        display: none;
+        margin-right: 20px;
+    }
+
+    .topnav {
+        background-color: rgba(255, 255, 255, 0);
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .topnav.responsive .topnav-buttons { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    .topnav.responsive .topnav-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
 
 
-    height: 500px;
-    width: 100%;
-    background-color: #0e5453;
+        height: 500px;
+        width: 100%;
+        background-color: #0e5453;
 
-    animation: growDown 0.5s ease-in-out forwards;
-    transform-origin: top center;
-    z-index: 4;
-    box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
-  }
-  .topnav.responsive .topnav-button1 {
-    display: block;
-  }
+        animation: growDown 0.5s ease-in-out forwards;
+        transform-origin: top center;
+        z-index: 4;
+        box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
+    }
 
-   .topnav.responsive .topnav-button2, .topnav.responsive .topnav-button3, .topnav.responsive .topnav-button4 {
-    display: block;
-  }
+    .topnav.responsive .topnav-button1 {
+        display: block;
+    }
 
-  .topnav.responsive .topnav-button5 {
-    display: block;
-  }
+    .topnav.responsive .topnav-button2,
+    .topnav.responsive .topnav-button3,
+    .topnav.responsive .topnav-button4 {
+        display: block;
+    }
+
+    .topnav.responsive .topnav-button5 {
+        display: block;
+    }
 }
 
 
@@ -476,7 +516,7 @@ h3 {
     height: 8px;
     background: #ccc;
 }
-  
+
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 8px;
@@ -521,7 +561,7 @@ h3 {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-  
+
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -541,14 +581,18 @@ h3 {
     flex-direction: column;
 }
 
-.fa-facebook-square:hover, .fa-instagram:hover, .fa-envelope:hover, .social-icon:hover {
+.fa-facebook-square:hover,
+.fa-instagram:hover,
+.fa-envelope:hover,
+.social-icon:hover {
     animation: jump 1s;
     scale: 1.1;
 }
 
 
 
-.footer-btn1, .footer-btn2 {
+.footer-btn1,
+.footer-btn2 {
     border: none;
     background: rgba(0, 0, 0, 0);
     color: white;
@@ -565,8 +609,10 @@ h3 {
 
 .social-icon {
     width: 45px;
-    margin-right: 30px; /* Adjust margin as needed */
-    margin-left: 30px;  /* Adjust margin as needed */
+    margin-right: 30px;
+    /* Adjust margin as needed */
+    margin-left: 30px;
+    /* Adjust margin as needed */
     margin-top: 10px;
 }
 
@@ -601,7 +647,7 @@ h3 {
     justify-content: center;
     margin-top: 10px;
 }
-  
+
 .copyright-container {
     display: flex;
     float: right;
@@ -609,7 +655,7 @@ h3 {
     font-family: bilo, sans-serif;
 
 }
-  
+
 .some-container {
     display: flex;
     float: right;
@@ -622,7 +668,7 @@ h3 {
 .copyright-container {
     display: flex;
     justify-content: center;
-    margin:0;
+    margin: 0;
     order: 4;
     margin-top: 40px;
 }
@@ -633,7 +679,8 @@ h3 {
     overflow: hidden;
 }
 
-.footer, .push {
+.footer,
+.push {
     margin-top: -100px;
     height: 265px;
 }

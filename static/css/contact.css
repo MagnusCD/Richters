@@ -1,4 +1,6 @@
-h2, h3, p {
+h2,
+h3,
+p {
     font-family: bilo, sans-serif;
 }
 
@@ -13,7 +15,9 @@ h2, h3, p {
 }
 
 
-.form-container-header, .åbningstider-container-header, .map-container-header {
+.form-container-header,
+.åbningstider-container-header,
+.map-container-header {
     background-color: #d63f44;
     color: white;
     padding-bottom: 5px;
@@ -33,7 +37,7 @@ h2, h3, p {
     column-gap: 50px;
     row-gap: 100px;
     margin: 0 auto;
-    
+
 }
 
 
@@ -50,6 +54,7 @@ h2, h3, p {
     width: 260px;
     margin: 0 auto;
 }
+
 form {
     text-align: center;
     font-family: bilo, sans-serif;
@@ -176,14 +181,20 @@ form {
 
 
 @media screen and (max-width: 1024px) {
-    .form-container, .map-container, .åbningstider-container {
-      width: 320px;
+
+    .form-container,
+    .map-container,
+    .åbningstider-container {
+        width: 320px;
     }
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .form-container, .map-container, .åbningstider-container {
+
+    .form-container,
+    .map-container,
+    .åbningstider-container {
         width: 80%;
-      }
+    }
 }

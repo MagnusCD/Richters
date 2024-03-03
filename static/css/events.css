@@ -15,7 +15,6 @@
 
 .back-button:hover {
   opacity: 0.9;
-  transform: scale(0.9);
 }
 
 .fa-arrow-left {
@@ -38,7 +37,7 @@
 }
 
 .single-post-container {
-  padding-top: 100px;
+  padding-top: 150px;
   margin: 0 auto;
 }
 

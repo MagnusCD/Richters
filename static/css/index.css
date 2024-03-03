@@ -11,7 +11,7 @@ body {
 .om-richters-container {
   margin: 0 auto;
   background-image: url("/images/om-richters-img.jpg");
-  
+
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,7 +46,8 @@ body {
 
 
 
-.om-richters-header, .byvandring-header {
+.om-richters-header,
+.byvandring-header {
   color: white;
   /*
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -114,7 +115,7 @@ body {
 
 .box h2 {
   color: rgb(255, 255, 255);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   padding-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(0, 0, 0, 0.6);
@@ -123,7 +124,7 @@ body {
   margin-left: 10px;
 }
 
-.box  {
+.box {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -161,7 +162,7 @@ body {
 
 
 
- 
+
 
 
 
@@ -201,7 +202,9 @@ body {
 
 
 @media (min-width: 1024px) {
-  .grid-wrapper, .om-richters-container {
+
+  .grid-wrapper,
+  .om-richters-container {
     margin-top: 200px;
   }
 }
@@ -214,6 +217,7 @@ body {
   .grid-wrapper {
     width: 95%;
   }
+
   .om-richters-wrapper p {
     margin-left: 5px;
     margin-right: 5px;
@@ -223,18 +227,23 @@ body {
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .om-richters-container, .fb-container {
+
+  .om-richters-container,
+  .fb-container {
     width: 80%;
   }
+
   .om-richters-wrapper {
     width: fit-content;
     margin: 0 auto;
     margin-left: 25px;
     margin-right: 25px;
   }
+
   .box {
     width: 100%;
   }
+
   .box p {
     padding: 5px;
   }
@@ -244,6 +253,7 @@ body {
     margin-right: 50px;
     margin: 0 auto;
   }
+
   .byvandring-header {
     width: 100%;
     margin: 0 auto;
@@ -253,18 +263,24 @@ body {
 
 
 @media (max-width: 768px) {
-  .om-richters-wrapper, .fb-container, .byvandring-header, .om-richters-header {
+
+  .om-richters-wrapper,
+  .fb-container,
+  .byvandring-header,
+  .om-richters-header {
     width: 320px;
     margin: 0 auto;
   }
- 
+
   .om-richters-wrapper {
     border-radius: 0;
   }
+
   .om-richters-wrapper p {
     color: black;
     text-shadow: none;
   }
+
   .box p {
     color: black;
   }
@@ -279,8 +295,9 @@ body {
 
 
   .om-richters-container {
-    width: 100%; 
+    width: 100%;
   }
+
   .grid-wrapper {
     width: 100%;
   }
@@ -291,27 +308,32 @@ body {
     row-gap: 0px;
     background-image: none;
   }
+
   .box p {
     height: fit-content;
     background-color: #fbf9f2;
     margin-left: 0;
     margin-right: 0;
   }
+
   .box h2 {
     background-color: #fbf9f2;
   }
+
   .one {
     display: flex;
     flex-direction: column;
     background-image: none;
     background-color: #fbf9f2;
   }
+
   .two {
     display: flex;
     flex-direction: column;
     background-image: none;
     background-color: #fbf9f2;
   }
+
   .three {
     display: flex;
     flex-direction: column;
@@ -319,6 +341,3 @@ body {
     background-color: #fbf9f2;
   }
 }
-
-
-
