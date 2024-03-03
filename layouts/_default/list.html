@@ -3,10 +3,10 @@
     <link rel="stylesheet" href="/css/events.css">
 </head>
 
-<center>
+
 <div class="events-container">
     
-    <center><h1 class="arrangementer-header">Events</h1></center>
+    <h1 class="arrangementer-header">Events</h1>
     
     <div class="posts-container">
         <section class="posts-list">
@@ -14,21 +14,22 @@
             {{ range $paginator.Pages }}
             <article class="single-post border-bottom pb-4">
 
-                <center>
+               
                 <h2 class="entry-title mb-4">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </h2>
-                </center>
+               
 
                 <div class="entry-content">
                     {{ .Content }}
                 </div>
 
-                <br>
               
-                <span class="post-date">
-                    <time><b>Slået op:</b> {{ dateFormat .Site.Params.dateFormat .Date }}</time>
-                </span>
+                <div class="post-meta">
+                    <span class="post-date">
+                        <time><b>Slået op:</b> {{ dateFormat .Site.Params.dateFormat .Date }}</time>
+                    </span>
+                </div>
             </article>
             {{ end }}
             <div class="pagination pt-4">
@@ -37,5 +38,5 @@
         </section>
     </div>
 </div>
-</center>
+
 {{ end }}

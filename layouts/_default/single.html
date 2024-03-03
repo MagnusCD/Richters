@@ -5,20 +5,20 @@
 
 
 
-<center>
 <div class="single-post-container">
+    <a href="/events" class="back-button"><i class="fa fa-arrow-left" aria-hidden="true"></i>Tilbage</a>
     <article class="single-post">
         <h1 class="entry-title mt-4 mb-4">{{ .Title }}</h1>
         <div class="post-meta">
-            <span class="post-author"> Slået op af: {{ .Params.author }} |</span>
+            <span class="post-author m-2"> Slået op af: {{ .Params.author }} |</span>
             <span class="post-date" style="margin-left: -10px";>
                 <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
             </span>
+        </div>
         <div class="entry-content mt-4"> {{ .Content }} </div>
     </article>
 </div>
-</center>
 
-<a href="/events" class="back-button"><i class="fa fa-arrow-left" aria-hidden="true"></i><p>Tilbage</p></a>
+
 
 {{ end }}
