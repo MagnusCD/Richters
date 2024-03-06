@@ -77,39 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// --- Config --- //
+// Cookie consent logic
 var purecookieTitle = "Cookies."; // Title
 var purecookieDesc = "Ved at bruge denne hjemmeside, accepterer du samtidigt, at vi gør brug af cookies."; // Description
 var purecookieLink = '<a href="https://www.cssscript.com/privacy-policy/" target="_blank"><!--What for?--></a>'; // Cookiepolicy link
 var purecookieButton = "Forstået"; // Button text
-// ---        --- //
-
-
-function pureFadeIn(elem, display){
-  var el = document.getElementById(elem);
-  el.style.opacity = 0;
-  el.style.display = display || "block";
-
-  (function fade() {
-    var val = parseFloat(el.style.opacity);
-    if (!((val += .02) > 1)) {
-      el.style.opacity = val;
-      requestAnimationFrame(fade);
-    }
-  })();
-};
-function pureFadeOut(elem){
-  var el = document.getElementById(elem);
-  el.style.opacity = 1;
-
-  (function fade() {
-    if ((el.style.opacity -= .02) < 0) {
-      el.style.display = "none";
-    } else {
-      requestAnimationFrame(fade);
-    }
-  })();
-};
 
 function setCookie(name,value,days) {
     var expires = "";
@@ -120,16 +92,18 @@ function setCookie(name,value,days) {
     }
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
+
 function getCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
+    for(var i=0; i < ca.length; i++) {
         var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
     }
     return null;
 }
+
 function eraseCookie(name) {
     document.cookie = name+'=; Max-Age=-99999999;';
 }
@@ -166,22 +140,12 @@ function cookieConsent() {
     // Append the container to the body
     document.body.appendChild(consentContainer);
 
-    // Fade in effect
-    pureFadeIn("cookieConsentContainer");
-
-    // Attach event listener to the button instead of using onClick
+    // Attach event listener to the button
     buttonLink.addEventListener('click', function() {
-      purecookieDismiss();
+      setCookie('purecookieDismiss','1',7);
+      consentContainer.style.display = "none";
     });
   }
-}
-
-// Make sure pureFadeIn, purecookieDismiss, getCookie, purecookieTitle, purecookieDesc, purecookieLink, and purecookieButton are defined somewhere in your scripts.
-
-
-function purecookieDismiss() {
-  setCookie('purecookieDismiss','1',7);
-  pureFadeOut("cookieConsentContainer");
 }
 
 window.onload = function() { cookieConsent(); };
