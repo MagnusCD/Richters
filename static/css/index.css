@@ -80,7 +80,6 @@ body {
 
 
 .grid-wrapper {
-  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -299,7 +298,10 @@ img {
 
 @media (min-width: 1024px) {
 
-  .grid-wrapper,
+  .grid-wrapper
+  {
+    margin-top: 125px;
+  }
   .om-richters-container {
     margin-top: 200px;
   }
