@@ -448,7 +448,7 @@ h3 {
     .topnav-button4,
     .topnav-button5 {
         display: none;
-        margin-right: 25px;
+        margin-right: 25px;ƒ
     }
 
     .topnav {
@@ -669,7 +669,7 @@ h3 {
     margin-top: 40px;
 }
 
-.wrapper {
+.topnav-wrapper {
     min-height: 100%;
     margin-bottom: 100px;
     overflow: hidden;
