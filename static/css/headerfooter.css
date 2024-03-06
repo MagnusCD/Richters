@@ -11,6 +11,16 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
+.title {
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 300%;
+    padding-top: 100px;
+    text-align: center;
+    font-family: bilo, sans-serif;
+    font-weight: 800;
+}
+
 h1 {
     font-size: 250%;
     font-weight: 800;

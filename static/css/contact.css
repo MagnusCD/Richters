@@ -5,19 +5,12 @@ p {
 }
 
 
-.contact-header {
-    color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 300%;
-    padding-top: 100px;
-    margin-bottom: 50px;
-    font-family: bilo, sans-serif;
-}
 
 
-.form-container-header,
-.åbningstider-container-header,
-.map-container-header {
+
+.form-container-title,
+.åbningstider-container-title,
+.map-container-title {
     background-color: #d63f44;
     color: white;
     padding-bottom: 5px;

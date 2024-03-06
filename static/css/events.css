@@ -33,15 +33,6 @@
   padding-right: 5px;
 }
 
-.arrangementer-header {
-  color: rgb(255, 255, 255);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  font-size: 300%;
-  padding-top: 100px;
-  text-align: center;
-  font-family: bilo, sans-serif;
-}
-
 .posts-container,
 .single-post-container {
   width: 800px;

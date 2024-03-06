@@ -46,8 +46,8 @@ body {
 
 
 
-.om-richters-header,
-.byvandring-header {
+.om-richters-title,
+.byvandring-title {
   color: white;
   /*
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -59,7 +59,7 @@ body {
   padding: 10px;
 }
 
-.byvandring-header {
+.byvandring-title {
   width: 1000px;
 }
 
@@ -344,13 +344,13 @@ img {
     padding: 5px;
   }
 
-  .om-richters-header {
+  .om-richters-title {
     margin-left: 50px;
     margin-right: 50px;
     margin: 0 auto;
   }
 
-  .byvandring-header {
+  .byvandring-title {
     width: 100%;
     margin: 0 auto;
   }
@@ -361,9 +361,8 @@ img {
 @media (max-width: 768px) {
 
   .om-richters-wrapper,
-  .fb-container,
-  .byvandring-header,
-  .om-richters-header {
+  .byvandring-title,
+  .om-richters-title {
     width: 320px;
     margin: 0 auto;
   }
