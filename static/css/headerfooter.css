@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -7,12 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(248, 239, 222);
-    font-family: bilo, sans-serif;
     font-family: "Lucida Console", "Courier New", monospace;
-
-    /*
-    font-family: jaf-herb, serif;
-    */
 }
 
 h1 {
@@ -452,7 +448,7 @@ h3 {
     .topnav-button4,
     .topnav-button5 {
         display: none;
-        margin-right: 20px;
+        margin-right: 25px;
     }
 
     .topnav {
@@ -562,9 +558,9 @@ h3 {
     padding-top: 15px;
     padding-bottom: 15px;
 
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 
