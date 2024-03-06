@@ -27,39 +27,7 @@ h3 {
 }
 
 
-/*Baggrund*/
-.richters-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    transform: translateZ(-1px) scale(1.5);
-    transition: transform 0.3s ease-out;
-    /* Add a smooth transition */
-}
 
-@media screen and (min-width: 1100px) {
-    #bg-mobile {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    #richters-bg {
-        display: none;
-    }
-
-    #bg-mobile {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-    }
-}
 
 @keyframes jump {
     0% {
@@ -448,7 +416,7 @@ h3 {
     .topnav-button4,
     .topnav-button5 {
         display: none;
-        margin-right: 25px;ƒ
+        margin-right: 25px;
     }
 
     .topnav {
@@ -587,18 +555,18 @@ h3 {
 
 
 
-.footer-btn1,
-.footer-btn2 {
+.footer-text,
+.footer-text2 {
     border: none;
     background: rgba(0, 0, 0, 0);
     color: white;
 }
 
-.footer-btn1 {
+.footer-text {
     font-size: 150%;
 }
 
-.footer-btn2 {
+.footer-text2 {
     font-size: 75%;
     font-weight: 400;
 }
