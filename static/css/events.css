@@ -1,9 +1,12 @@
 .breadcrumb {
-  background-color: lightgrey;
+  background-color: #fbf9f2;
   font-family: bilo, sans-serif;
   width: fit-content;
-  padding: 5px;
+  padding: 10px;
   position: relative;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
 }
 
 .back-button {
@@ -45,7 +48,7 @@
 }
 
 .single-post-container {
-  padding-top: 100px;
+  padding-top: 80px;
   margin: 0 auto;
 }
 
