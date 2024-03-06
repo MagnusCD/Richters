@@ -159,6 +159,22 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Existing CSS for gallery */
 .mySlides {
   display: none;
@@ -175,7 +191,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+}
 
+.gallery-images {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 1024px) {
@@ -244,10 +265,6 @@ img {
 
 
 
-
-
-
-
 @media (min-width: 769px) and (max-width: 1024px) {
   .slideshow-container {
       width: 80%;
@@ -271,15 +288,6 @@ img {
       height: 200px;
   }
 }
-
-
-
-
-
-
-
-
-
 
 
 
