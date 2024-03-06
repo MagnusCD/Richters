@@ -22,8 +22,8 @@
 
 
                 <div class="entry-content">
-                    {{ .Content }}
-                    <a href="{{ .Permalink }}">Læs mere</a> 
+                    {{ .Content | truncate 600 }}
+                    <a href="{{ .Permalink }}">Fuldt opslag</a> 
                 </div>
 
               
