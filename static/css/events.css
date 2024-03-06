@@ -3,6 +3,7 @@
   font-family: bilo, sans-serif;
   width: fit-content;
   padding: 5px;
+  position: relative;
 }
 
 .back-button {
