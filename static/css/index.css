@@ -203,8 +203,7 @@ body {
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
-  .om-richters-container,
-  .fb-container {
+  .om-richters-container {
     width: 80%;
   }
 
@@ -240,10 +239,20 @@ body {
 @media (max-width: 768px) {
 
   .om-richters-wrapper,
-  .byvandring-title,
-  .om-richters-title {
-    width: 320px;
+  .box,
+  .byvandring-title
+  {
+    width: 80%;
     margin: 0 auto;
+  }
+
+  .om-richters-title {
+    width: 100%;
+  }
+
+
+  .box a {
+    color: black;
   }
 
   .om-richters-wrapper {
