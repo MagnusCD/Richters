@@ -10,7 +10,7 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-    height: 425px;  
+    height: 390px;  
 }
 
 .contact-us {
@@ -125,18 +125,17 @@ form {
     height: 55px;
     width: 5px;
     background-color: #00b295;
-    /*
-    margin-left: 100px;
-    float: left;
-    position: sticky;
-    */
+    font-family: bilo, sans-serif;
 }
 
 .line-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: -20px;
 }
+
+
 
 
 

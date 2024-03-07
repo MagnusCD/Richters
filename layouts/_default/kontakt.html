@@ -32,44 +32,56 @@
 
             <div class="line-wrapper">
                 <div class="line"></div>
-                    <h3>
-                        Mandag: <br> 11:00 - 19:00 <br><br>
-                    </h3>
+                <div class="opening-hours-wrapper">
+                    {{ $page := .Site.GetPage "kontakt/mandag" }}
+                    <h3>{{ $page.Title }}</h3>
+                    {{ $page.Content }}
+                </div>
             </div>
 
             <div class="line-wrapper">
                 <div class="line"></div>
-                    <h3>
-                        Tirsdag:<br> 11:00 - 19:00 <br><br>
-                    </h3>
+                <div class="opening-hours-wrapper">
+                    {{ $page := .Site.GetPage "kontakt/tirsdag" }}
+                    <h3>{{ $page.Title }}</h3>
+                    {{ $page.Content }}
+                </div>
             </div>
 
             <div class="line-wrapper">
                 <div class="line"></div>
-                    <h3>
-                        Onsdag: <br>11:00 - 19:00 <br><br>
-                    </h3>
+                <div class="opening-hours-wrapper">
+                    {{ $page := .Site.GetPage "kontakt/onsdag" }}
+                    <h3>{{ $page.Title }}</h3>
+                    {{ $page.Content }}
+                </div>
             </div>
 
             <div class="line-wrapper">
                 <div class="line"></div>
-                    <h3>
-                        Torsdag: <br>11:00 - 19:00 <br><br>
-                    </h3>
+                <div class="opening-hours-wrapper">
+                    {{ $page := .Site.GetPage "kontakt/torsdag" }}
+                    <h3>{{ $page.Title }}</h3>
+                    {{ $page.Content }}
+                </div>
             </div>
 
             <div class="line-wrapper">
                 <div class="line"></div>
-                    <h3>
-                        Fredag:<br> 11:00 - 24:00 <br><br>
-                    </h3>
+                <div class="opening-hours-wrapper">
+                    {{ $page := .Site.GetPage "kontakt/fredag" }}
+                    <h3>{{ $page.Title }}</h3>
+                    {{ $page.Content }}
+                </div>
             </div>
 
             <div class="line-wrapper">
                 <div class="line"></div>
-                    <h3>
-                        Lørdag:<br> 11:00 - 24:00 <br><br>
-                    </h3>
+                <div class="opening-hours-wrapper">
+                    {{ $page := .Site.GetPage "kontakt/lørdag" }}
+                    <h3>{{ $page.Title }}</h3>
+                    {{ $page.Content }}
+                </div>
             </div>
         </div>
 
