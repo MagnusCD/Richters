@@ -1,0 +1,116 @@
+/* Existing CSS for gallery */
+.mySlides {
+    display: none;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  
+  .gallery-images {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 1024px) {
+    .slideshow-container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+  }
+  
+  .slideshow-container h1 {
+    color: white;
+    background-color: #d63f44;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+  
+  .slideshow-wrapper {
+    padding-bottom: 10px;
+    background-color: #fbf9f2;
+    /*
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    */
+  }
+  
+  .gallery-images {
+    width: 600px;
+    height: 450px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  /* Dots/Bullets/Indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    padding-bottom: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .activeimage,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  
+  @keyframes fade {
+    from {
+        opacity: .4
+    }
+  
+    to {
+        opacity: 1
+    }
+  }
+  
+  
+  
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .slideshow-container {
+        width: 80%;
+    }
+  
+    .gallery-images {
+        width: 400px;
+        height: 300px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      height: fit-content;
+    }
+    .slideshow-container {
+        width: 320px;
+    }
+  
+    .gallery-images {
+        width: 250px;
+        height: 200px;
+    }
+  }

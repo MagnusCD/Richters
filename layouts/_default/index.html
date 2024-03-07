@@ -29,6 +29,7 @@
 
     <script src="/js/script.js"></script>
     
+    <link rel="stylesheet" href="/css/gallery.css">
     <link rel="stylesheet" href="/css/burgermenu.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
@@ -83,7 +84,7 @@
             </div>
 
             <div class="topnav-image-wrapper">
-                <img class="topnav-image" src="/images/richters-hero-image.webp" alt="Richters Ølstue Facade"
+                <img class="topnav-image" rel="preload" src="/images/richters-hero-image.webp" alt="Richters Ølstue Facade"
                     width="100%;">
             </div>
 
@@ -104,65 +105,51 @@
 
         <main class="site-main">
 
-            <div class="grid-wrapper">
-                <h1 class="byvandring-title">Byvandring</h1>
-                <div class="grid-container-byvandring">
-
-                    <div class="box one">
-                        <div class="container reveal fade-bottom" style="background-color: rgba(0, 0, 0, 0);">
-                            <h2>Booking</h2>
-                            <p>
-                                <br>Book jeres helt egen private byvandring – min. 10 personer a 100 kr. (færre kan gøre
-                                det, men mindste prisen er 1000 kr.)<br><br>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="box two">
-                        <div class="container reveal fade-bottom" style="background-color: rgba(0, 0, 0, 0);">
-                            <h2>Turen</h2>
-                            <p>
-                                <br>På vores ture besøger man den gamle Apotekerkælder, der er byens største og flottest
-                                bevarede kælder. Vi er de eneste, der kan tilbyde besøg i denne fredede store flotte
-                                unikke middelalderkælder (vi besøger normalt også et par baggårde i nogle fredede
-                                ejendomme, hvor der ikke er offentlig adgang). Vores ture er udover en masse historik om
-                                de gamle huse også med farverige historier om gamle familier, bysbørn, politik mm.
-                                <br><br> Varighed ca. 1,5t
-                                <br><br>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="box three">
-                        <div class="container reveal fade-bottom" style="background-color: rgba(0, 0, 0, 0);">
-                            <h2>Drikkevarer</h2>
-                            <p>
-                                <br>
-                                Inkluderet i prisen er en bitter samt en husøl (eller vand) på RICHTERs Ølstue, hvor
-                                alle turene starter og slutter (også her fås lidt historie om den fredede ejendom fra
-                                1644)
-                                <br><br>
-                                Vi kan kontaktes på mail RICHTERS@YOUMAIL.DK<br><br>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
             <div class="om-richters-container">
                 <br>
                 <div class="om-richters-wrapper">
                     <h1 class="om-richters-title">Om Richters</h1>
                     <div class="container reveal fade-bottom" style="background-color: rgba(0, 0, 0, 0);">
                         <p>
-                            {{ $page := .Site.GetPage "/pages/om-richters" }}
+                            {{ $page := .Site.GetPage "/forside/om-richters" }}
                             {{ $page.Content }}
                         </p>
                     </div>
                 </div>
                 <br>
+            </div>
+
+
+            <div class="grid-wrapper">
+                <h1 class="byvandring-title">Byvandring</h1>
+                <div class="grid-container-byvandring">
+
+                    <div class="box one">
+                        <div class="content-wrapper reveal fade-bottom">
+                                {{ $page := .Site.GetPage "/forside/byvandring-første-kolonne" }}
+                                <h2>{{ $page.Title }}</h2>
+                                {{ $page.Content }}
+                        </div>
+                    </div>
+
+                    <div class="box two">
+                        <div class="content-wrapper reveal fade-bottom">
+                            {{ $page := .Site.GetPage "/forside/byvandring-anden-kolonne" }}
+                            <h2>{{ $page.Title }}</h2>
+                            {{ $page.Content }}
+                        </div>
+                    </div>
+
+
+                    <div class="box three">
+                        <div class="content-wrapper reveal fade-bottom">    
+                            {{ $page := .Site.GetPage "/forside/byvandring-tredje-kolonne" }}
+                            <h2>{{ $page.Title }}</h2>
+                            {{ $page.Content }}
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
 
@@ -265,7 +252,7 @@
             let viewportWidth = $(window).width();
 
             // Adjust the condition to check if the viewport is wider than 1100px
-            if (viewportWidth > 1100) {
+            if (viewportWidth > 1024) {
                 if ($(window).scrollTop() > viewportHeight && !classAdded) {
                     $('.topnav').addClass("fixed");
                     classAdded = true;
@@ -308,10 +295,10 @@
         slideIndex++;
         if (slideIndex > slides.length) { slideIndex = 1 }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+            dots[i].className = dots[i].className.replace(" activeimage", "");
         }
         slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+        dots[slideIndex - 1].className += " activeimage";
         setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
 </script>
