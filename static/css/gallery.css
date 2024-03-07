@@ -45,11 +45,15 @@
     */
   }
   
-  .gallery-images {
+  .mySlides img {
     width: 600px;
     height: 450px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   /* Dots/Bullets/Indicators */
@@ -93,7 +97,7 @@
         width: 80%;
     }
   
-    .gallery-images {
+    .mySlides img {
         width: 450px;
         height: 350px;
     }
@@ -109,7 +113,7 @@
         width: 80%;
     }
   
-    .gallery-images {
+    .mySlides img {
         width: 275px;
         height: 225px;
     }

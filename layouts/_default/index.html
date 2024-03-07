@@ -158,33 +158,44 @@
                 <div class="slideshow-wrapper">
 
                     <div class="mySlides fade">
-                        <img class="gallery-images" src="/images/gallery-img-1.jpg"
-                                alt="Fremvisning af en vores mange hyggelige ølstuer">
+                        
+                            {{ $page := .Site.GetPage "/forside/galleri/galleri-billede-1" }}
+                            {{ $page.Content }}
+                      
                     </div>
 
                     <div class="mySlides fade">
-                        <img class="gallery-images" src="/images/gallery-img-2.jpg"
-                                alt="Bord med en masse serveringer af vores lækre italianske antipasti">
+                      
+                            {{ $page := .Site.GetPage "/forside/galleri/galleri-billede-2" }}
+                            {{ $page.Content }}
+                    </div>
+               
+                    <div class="mySlides fade">
+                        
+                            {{ $page := .Site.GetPage "/forside/galleri/galleri-billede-3" }}
+                            {{ $page.Content }}
+                  
                     </div>
 
                     <div class="mySlides fade">
-                        <img class="gallery-images" src="/images/gallery-img-3.jpg"
-                                alt="Fotocollage fra ølstuen">
+                  
+                            {{ $page := .Site.GetPage "/forside/galleri/galleri-billede-4" }}
+                            {{ $page.Content }}
+                     
                     </div>
 
                     <div class="mySlides fade">
-                        <img class="gallery-images" src="/images/gallery-img-4.jpg"
-                                alt="Tallerkener med vores frisksmurte smørrebrød">
-                    </div>
+                       
+                            {{ $page := .Site.GetPage "/forside/galleri/galleri-billede-5" }}
+                            {{ $page.Content }}
+                       
+                     </div>
 
                     <div class="mySlides fade">
-                        <img class="gallery-images" src="/images/gallery-img-5.jpg"
-                                alt="Vores varme og lyse udestue">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img class="gallery-images" src="/images/gallery-img-6.jpg"
-                                 alt="Undendørs spisning">
+                      
+                            {{ $page := .Site.GetPage "/forside/galleri/galleri-billede-6" }}
+                            {{ $page.Content }}
+                   
                     </div>
 
                     <br>
