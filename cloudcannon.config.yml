@@ -1,0 +1,46 @@
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: static/uploads
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  events:
+    path: content/events
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  forside:
+    path: content/forside
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  kontakt:
+    path: content/kontakt
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  pages:
+    path: content
+    output: true
+    filter: strict
+    parse_branch_index: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+timezone: Etc/UTC
