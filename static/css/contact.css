@@ -5,6 +5,7 @@ p {
     text-align: center;
 }
 
+
 iframe {
     display: flex;
     margin-left: auto;
@@ -28,6 +29,7 @@ iframe {
     margin-bottom: 10px;
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
+    font-size: 250%;
 }
 
 
@@ -55,7 +57,7 @@ iframe {
     /*box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);*/
     margin-bottom: 50px;
     height: 550px;
-    width: 240px;
+    width: 250px;
     margin: 0 auto;
 }
 
@@ -116,7 +118,7 @@ form {
     /*box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);*/
     margin-bottom: 50px;
     height: 550px;
-    width: 240px;
+    width: 250px;
     margin: 0 auto;
 }
 
@@ -147,7 +149,7 @@ form {
     /*box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);*/
     margin-bottom: 50px;
     height: 550px;
-    width: 240px;
+    width: 250px;
     margin: 0 auto;
 }
 
