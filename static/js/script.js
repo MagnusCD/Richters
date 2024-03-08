@@ -27,10 +27,10 @@ function reveal() {
   }
 }
 
-window.addEventListener("scroll", reveal);
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.addEventListener("scroll", function() {
+  reveal(); // Call your reveal function
+  myFunction(); // Then call myFunction
+});
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
