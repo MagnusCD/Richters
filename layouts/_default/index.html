@@ -50,16 +50,20 @@
 </script>
 
 <script>
-      // Parallax effect for the background
-  document.addEventListener('scroll', function() {
-    const parallaxElement = document.querySelector('.topnav-image-wrapper');
-    let scrollPosition = window.pageYOffset;
-
-    // Adjust the speed and direction of the background movement here
-    // The '0.5' value means the background moves at half the speed of the scrolling
-    // Adjusting this value can make the effect more or less pronounced
-    parallaxElement.style.backgroundPositionY = scrollPosition * -0.7 + 'px';
-  });
+document.addEventListener('scroll', function() {
+  const parallaxElement = document.querySelector('.topnav-image-wrapper');
+  let scrollPosition = window.pageYOffset;
+  
+  // Check if the viewport width is less than 768 pixels
+  if(window.innerWidth < 768) {
+    // For viewports smaller than 768 pixels, reverse the direction of the effect
+    // You could adjust the '-0.1' value to change the effect's intensity or direction when reversed
+    parallaxElement.style.backgroundPositionY = -(scrollPosition * -0.2) + 'px';
+  } else {
+    // For wider viewports, keep the original effect
+    parallaxElement.style.backgroundPositionY = scrollPosition * -0.5 + 'px';
+  }
+});
 </script>
 
 <body>
