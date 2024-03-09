@@ -114,7 +114,8 @@
     }
   
     .mySlides img {
-        width: 275px;
+        width: 90%;
+        max-width: 300px;
         height: 225px;
     }
   }

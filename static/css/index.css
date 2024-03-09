@@ -269,6 +269,10 @@ body {
 
 @media (max-width: 768px) {
 
+  .topnav-image-wrapper {
+    background-size: auto;
+  }
+
   .om-richters-wrapper,
   .box,
   .byvandring-title
