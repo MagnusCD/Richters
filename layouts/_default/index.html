@@ -49,6 +49,19 @@
     });
 </script>
 
+<script>
+      // Parallax effect for the background
+  document.addEventListener('scroll', function() {
+    const parallaxElement = document.querySelector('.topnav-image-wrapper');
+    let scrollPosition = window.pageYOffset;
+
+    // Adjust the speed and direction of the background movement here
+    // The '0.5' value means the background moves at half the speed of the scrolling
+    // Adjusting this value can make the effect more or less pronounced
+    parallaxElement.style.backgroundPositionY = scrollPosition * -0.7 + 'px';
+  });
+</script>
+
 <body>
 
     <div class="nav-icon4" id="nav-icon4" onclick="topnavResponsive();">
@@ -83,10 +96,14 @@
                 <h2 class="name-anno">Richters Gård Anno 1644</h2>
             </div>
 
+            <div class="topnav-image-wrapper"></div>
+
+            <!--
             <div class="topnav-image-wrapper">
                 <img class="topnav-image" rel="preload" src="/images/richters-hero-image.webp"
                     alt="Richters Ølstue facade" width="100%;">
             </div>
+            -->
 
             <div class="topnav" id="myTopnav">
 
