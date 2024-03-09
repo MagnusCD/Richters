@@ -50,20 +50,30 @@
 </script>
 
 <script>
-document.addEventListener('scroll', function() {
+document.addEventListener('DOMContentLoaded', function() {
   const parallaxElement = document.querySelector('.topnav-image-wrapper');
-  let scrollPosition = window.pageYOffset;
-  
-  // Check if the viewport width is less than 768 pixels
-  if(window.innerWidth < 768) {
-    // For viewports smaller than 768 pixels, reverse the direction of the effect
-    // You could adjust the '-0.1' value to change the effect's intensity or direction when reversed
-    parallaxElement.style.backgroundPositionY = -(scrollPosition * -0.2) + 'px';
-  } else {
-    // For wider viewports, keep the original effect
-    parallaxElement.style.backgroundPositionY = scrollPosition * -0.5 + 'px';
-  }
+
+  document.addEventListener('scroll', function() {
+    let scrollPosition = window.pageYOffset;
+
+    if(window.innerWidth < 768) {
+      parallaxElement.style.backgroundPositionY = -(scrollPosition * -0.5) + 'px';
+    } else {
+      parallaxElement.style.backgroundPositionY = scrollPosition * 0.3   + 'px';
+    }
+  });
+
+  document.addEventListener('mousemove', function(e) {
+    const { clientX, clientY } = e;
+    const centerX = window.innerWidth / 1;
+    const centerY = window.innerHeight / 1;
+    const deltaX = (clientX - centerX) * 0.01; // Adjust the movement sensitivity here
+    const deltaY = (clientY - centerY) * 0.01; // Adjust the movement sensitivity here
+
+    parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+  });
 });
+
 </script>
 
 <body>
@@ -323,7 +333,7 @@ document.addEventListener('scroll', function() {
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " activeimage";
-        setTimeout(showSlides, 5000); // Change image every 5 seconds
+        setTimeout(showSlides, 5500); // Change image every 5 seconds
     }
 </script>
 
