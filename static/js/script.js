@@ -44,7 +44,7 @@ function myFunction() {
 
 
 
-
+/*
 document.addEventListener('DOMContentLoaded', function () {
   const topnavImage = document.querySelector('.topnav-image');
 
@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
     handleScroll(); // Call the handleScroll function to apply transformations at the top of the page
   });
 });
+*/
 
 
 
