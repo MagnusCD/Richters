@@ -50,32 +50,45 @@
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
       const parallaxElement = document.querySelector('.topnav-image-wrapper');
     
+      function handleMouseMove(e) {
+        const centerX = window.innerWidth;
+        const centerY = window.innerHeight;
+        const deltaX = (e.clientX - centerX) * 0.01;
+        const deltaY = (e.clientY - centerY) * 0.01;
+        parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+      }
+    
+      function updateMouseMoveListener() {
+        if(window.innerWidth > 768) {
+          document.addEventListener('mousemove', handleMouseMove);
+        } else {
+          document.removeEventListener('mousemove', handleMouseMove);
+          // Optionally reset the transform when disabling mouse movement effect
+          parallaxElement.style.transform = 'translate(0px, 0px)';
+        }
+      }
+    
+      // Handle scroll event
       document.addEventListener('scroll', function() {
         let scrollPosition = window.pageYOffset;
-    
         if(window.innerWidth < 768) {
           parallaxElement.style.backgroundPositionY = scrollPosition * 0.1 + 'px';
         } else {
           parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
         }
       });
-  
-  // Adjusted to NOT apply the mousemove effect on smaller screens (<768px)
-  if(window.innerWidth > 768) {
-    document.addEventListener('mousemove', function(e) {
-      const centerX = window.innerWidth / 1; // Corrected to accurately reflect the center
-      const centerY = window.innerHeight / 1;
-      const deltaX = (e.clientX - centerX) * 0.01; 
-      const deltaY = (e.clientY - centerY) * 0.01; 
-
-      parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    
+      // Add resize event listener to handle viewport changes
+      window.addEventListener('resize', updateMouseMoveListener);
+    
+      // Initial check and setup
+      updateMouseMoveListener();
     });
-  }
-});
-</script>
+    </script>
+    
     
 
 <body>
