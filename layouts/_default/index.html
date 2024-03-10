@@ -53,13 +53,6 @@
 document.addEventListener('DOMContentLoaded', function() {
       const parallaxElement = document.querySelector('.topnav-image-wrapper');
     
-         // Function to reset transform style
-        function resetTransformOnMobile() {
-            if(window.innerWidth < 768) {
-            parallaxElement.style.transform = 'translate(0px, -30px)';
-            }
-        }
-
       document.addEventListener('scroll', function() {
         let scrollPosition = window.pageYOffset;
     
@@ -73,21 +66,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // Adjusted to NOT apply the mousemove effect on smaller screens (<768px)
   if(window.innerWidth > 768) {
     document.addEventListener('mousemove', function(e) {
-      const centerX = window.innerWidth / 2; // Corrected to accurately reflect the center
-      const centerY = window.innerHeight / 2;
+      const centerX = window.innerWidth / 1; // Corrected to accurately reflect the center
+      const centerY = window.innerHeight / 1;
       const deltaX = (e.clientX - centerX) * 0.01; 
       const deltaY = (e.clientY - centerY) * 0.01; 
 
       parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
     });
   }
-
-    // Listen for resize events to handle viewport changes
-    window.addEventListener('resize', resetTransformOnMobile);
-
-    // Also, initially check the viewport and reset if necessary
-    resetTransformOnMobile();
-
 });
 </script>
     
