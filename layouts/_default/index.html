@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   
   // Adjusted to NOT apply the mousemove effect on smaller screens (<768px)
-  if(window.innerWidth >= 768) {
+  if(window.innerWidth > 768) {
     document.addEventListener('mousemove', function(e) {
       const centerX = window.innerWidth / 2; // Corrected to accurately reflect the center
       const centerY = window.innerHeight / 2;
