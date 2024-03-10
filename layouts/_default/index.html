@@ -75,9 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Apply translation based on mouse position
       parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-    } else {
-      // Reset the transform when the effect should not apply
-      parallaxElement.style.transform = 'translate(0px, 0px)';
     }
   });
 });
