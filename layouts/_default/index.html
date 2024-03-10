@@ -52,26 +52,25 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const parallaxElement = document.querySelector('.topnav-image-wrapper');
-  let lastScrollPosition = 0;
-  let ticking = false;
-
-  function applyParallax() {
-    // Apply the parallax effect based on the last known scroll position
-    const speed = window.innerWidth < 768 ? 0.2 : 0.4; // Adjust the parallax speed based on screen width
-    parallaxElement.style.backgroundPositionY = lastScrollPosition * speed + 'px';
-  }
 
   document.addEventListener('scroll', function() {
-    lastScrollPosition = window.pageYOffset;
+    let scrollPosition = window.pageYOffset;
+
+    // Use requestAnimationFrame to optimize the parallax effect
     if (!ticking) {
       window.requestAnimationFrame(function() {
-        applyParallax();
+        // Apply the parallax effect based on the scroll position and screen width
+        if(window.innerWidth < 768) {
+          parallaxElement.style.backgroundPositionY = scrollPosition * 0.2 + 'px';
+        } else {
+          parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
+        }
         ticking = false;
       });
       ticking = true;
     }
   });
-
+  
   // Adjusted to NOT apply the mousemove effect on smaller screens (<768px)
   if(window.innerWidth >= 768) {
     document.addEventListener('mousemove', function(e) {
