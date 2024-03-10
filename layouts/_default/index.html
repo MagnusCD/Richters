@@ -50,31 +50,42 @@
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const parallaxElement = document.querySelector('.topnav-image-wrapper');
-
-  document.addEventListener('scroll', function() {
-    let scrollPosition = window.pageYOffset;
-
-      parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
-  });
-
-  document.addEventListener('mousemove', function(e) {
-    // Only apply the effect if the viewport width is more than 1024px
-    if(window.innerWidth > 1024) {
-      const { clientX, clientY } = e;
-      // Adjusted to center the movement effect properly
-      const centerX = window.innerWidth / 1;
-      const centerY = window.innerHeight / 1;
-      const deltaX = (clientX - centerX) * 0.01; // Adjust the movement sensitivity here
-      const deltaY = (clientY - centerY) * 0.01; // Adjust the movement sensitivity here
-
-      // Apply translation based on mouse position
-      parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-    }
-  });
-});
-</script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const parallaxElement = document.querySelector('.topnav-image-wrapper');
+      let lastKnownScrollPosition = 0;
+      let ticking = false;
+    
+      function doParallax(scrollPos) {
+        parallaxElement.style.backgroundPositionY = scrollPos * 0.4 + 'px';
+      }
+    
+      document.addEventListener('scroll', function() {
+        lastKnownScrollPosition = window.pageYOffset;
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            doParallax(lastKnownScrollPosition);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    
+      function mouseMoveEffect(e) {
+        if(window.innerWidth > 1024) {
+          const centerX = window.innerWidth / 1; // Adjusted for actual center
+          const centerY = window.innerHeight / 1;
+          const deltaX = (e.clientX - centerX) * 0.01;
+          const deltaY = (e.clientY - centerY) * 0.01;
+          parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+        }
+      }
+    
+      if(window.innerWidth > 1024) {
+        document.addEventListener('mousemove', mouseMoveEffect);
+      }
+    });
+    </script>
+    
 
 <body>
 
