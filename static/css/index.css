@@ -22,8 +22,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
-  transition: background-position 0.1s;
-  transform: translateZ(0); /* or transform: translate3d(0,0,0); */
 }
 
 .om-richters-container {
