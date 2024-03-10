@@ -61,17 +61,6 @@
         parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
       }
     
-      function updateMouseMoveListener() {
-        if(window.innerWidth > 768) {
-          document.addEventListener('mousemove', handleMouseMove);
-        } else {
-          document.removeEventListener('mousemove', handleMouseMove);
-          // Optionally reset the transform when disabling mouse movement effect
-          parallaxElement.style.transform = 'translate(0px, 0px)';
-        }
-      }
-    
-      // Handle scroll event
       document.addEventListener('scroll', function() {
         let scrollPosition = window.pageYOffset;
         if(window.innerWidth < 768) {
@@ -80,12 +69,6 @@
           parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
         }
       });
-    
-      // Add resize event listener to handle viewport changes
-      window.addEventListener('resize', updateMouseMoveListener);
-    
-      // Initial check and setup
-      updateMouseMoveListener();
     });
     </script>
     
