@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let scrollPosition = window.pageYOffset;
 
     if(window.innerWidth < 768) {
-      parallaxElement.style.backgroundPositionY = -(scrollPosition * 0.1) + 'px';
+      parallaxElement.style.backgroundPositionY = scrollPosition * 0.3 + 'px';
     } else {
-      parallaxElement.style.backgroundPositionY = scrollPosition * 0.1 + 'px';
+      parallaxElement.style.backgroundPositionY = scrollPosition * 0.3 + 'px';
     }
   });
 
