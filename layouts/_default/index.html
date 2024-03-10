@@ -53,6 +53,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       const parallaxElement = document.querySelector('.topnav-image-wrapper');
     
+      document.addEventListener('mousemove', handleMouseMove);
       function handleMouseMove(e) {
         const centerX = window.innerWidth;
         const centerY = window.innerHeight;
