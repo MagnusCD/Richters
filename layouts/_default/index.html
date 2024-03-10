@@ -50,31 +50,36 @@
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const parallaxElement = document.querySelector('.topnav-image-wrapper');
-
-  document.addEventListener('scroll', function() {
-    let scrollPosition = window.pageYOffset;
-
-    if(window.innerWidth < 768) {
-      parallaxElement.style.backgroundPositionY = scrollPosition * 0.3 + 'px';
-    } else {
-      parallaxElement.style.backgroundPositionY = scrollPosition * 0.3 + 'px';
-    }
-  });
-
-  document.addEventListener('mousemove', function(e) {
-    const { clientX, clientY } = e;
-    const centerX = window.innerWidth / 1;
-    const centerY = window.innerHeight / 1;
-    const deltaX = (clientX - centerX) * 0.01; // Adjust the movement sensitivity here
-    const deltaY = (clientY - centerY) * 0.01; // Adjust the movement sensitivity here
-
-    parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-  });
-});
-
-</script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const parallaxElement = document.querySelector('.topnav-image-wrapper');
+    
+      document.addEventListener('scroll', function() {
+        let scrollPosition = window.pageYOffset;
+    
+        // Adjusts the speed of the parallax effect based on viewport width
+        if(window.innerWidth < 768) {
+          parallaxElement.style.backgroundPositionY = scrollPosition * 0.1 + 'px';
+        } else {
+          parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
+        }
+      });
+    
+      document.addEventListener('mousemove', function(e) {
+        // Applies the mouse move effect globally, without viewport width restriction.
+        // Consider adding a condition if you want to limit this effect to wider screens.
+        const { clientX, clientY } = e;
+        // These calculations place the origin in the center of the viewport.
+        const centerX = window.innerWidth / 1;
+        const centerY = window.innerHeight / 1;
+        // Adjusting the calculation for the center
+        const deltaX = (clientX - centerX) * 0.01; // Adjust the movement sensitivity here
+        const deltaY = (clientY - centerY) * 0.01; // Adjust the movement sensitivity here
+    
+        parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+      });
+    });
+    </script>
+    
 
 <body>
 
