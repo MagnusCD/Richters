@@ -64,16 +64,23 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   document.addEventListener('mousemove', function(e) {
-    const { clientX, clientY } = e;
-    const centerX = window.innerWidth / 1;
-    const centerY = window.innerHeight / 1;
-    const deltaX = (clientX - centerX) * 0.01; // Adjust the movement sensitivity here
-    const deltaY = (clientY - centerY) * 0.01; // Adjust the movement sensitivity here
+    // Only apply the effect if the viewport width is more than 1024px
+    if(window.innerWidth > 1024) {
+      const { clientX, clientY } = e;
+      // Adjusted to center the movement effect properly
+      const centerX = window.innerWidth / 1;
+      const centerY = window.innerHeight / 1;
+      const deltaX = (clientX - centerX) * 0.01; // Adjust the movement sensitivity here
+      const deltaY = (clientY - centerY) * 0.01; // Adjust the movement sensitivity here
 
-    parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+      // Apply translation based on mouse position
+      parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    } else {
+      // Reset the transform when the effect should not apply
+      parallaxElement.style.transform = 'translate(0px, 0px)';
+    }
   });
 });
-
 </script>
 
 <body>
