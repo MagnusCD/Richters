@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
+  margin-top: -30px;
   z-index: 1;
   transition: background-position 0.1s;
 }
