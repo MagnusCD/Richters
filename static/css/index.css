@@ -275,9 +275,11 @@ body {
 @media (max-width: 768px) {
 
   .topnav-image-wrapper {
-    background-size: contain;
+    background-size: cover;
+    /*
     background-attachment: local;
     width: 100%;
+    */
   }
 
   .om-richters-wrapper,
