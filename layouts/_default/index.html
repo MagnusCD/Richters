@@ -78,11 +78,7 @@
     requestTick();
   });
 
-  // Optional: Disable parallax on smaller screens to improve performance
-  if (window.innerWidth < 768) {
-    window.removeEventListener('scroll', updateParallax);
-    parallaxElement.style.backgroundPosition = 'center'; // Reset background position
-  }
+
     
       document.addEventListener('mousemove', function(e) {
         // Applies the mouse move effect globally, without viewport width restriction.
