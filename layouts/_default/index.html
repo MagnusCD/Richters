@@ -70,19 +70,7 @@
         }
       });
     
-      function mouseMoveEffect(e) {
-        if(window.innerWidth > 1024) {
-          const centerX = window.innerWidth / 1; // Adjusted for actual center
-          const centerY = window.innerHeight / 1;
-          const deltaX = (e.clientX - centerX) * 0.01;
-          const deltaY = (e.clientY - centerY) * 0.01;
-          parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-        }
-      }
-    
-      if(window.innerWidth > 1024) {
-        document.addEventListener('mousemove', mouseMoveEffect);
-      }
+ 
     });
     </script>
     
