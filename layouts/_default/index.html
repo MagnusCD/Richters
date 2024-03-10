@@ -64,7 +64,7 @@
       });
     
       document.addEventListener('mousemove', function(e) {
-     
+        if(window.innerWidth < 768) {
         const { clientX, clientY } = e;
         
         const centerX = window.innerWidth / 1;
@@ -74,6 +74,7 @@
         const deltaY = (clientY - centerY) * 0.01; 
     
         parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+        }
       });
     });
     </script>
