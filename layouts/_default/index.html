@@ -63,19 +63,16 @@
         }
       });
     
-      document.addEventListener('mousemove', function(e) {
-        if(window.innerWidth < 768) {
-        const { clientX, clientY } = e;
-        
-        const centerX = window.innerWidth / 1;
-        const centerY = window.innerHeight / 1;
-       
-        const deltaX = (clientX - centerX) * 0.01; 
-        const deltaY = (clientY - centerY) * 0.01; 
-    
-        parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+      if(window.innerWidth >= 768) {
+            document.addEventListener('mousemove', function(e) {
+            const centerX = window.innerWidth / 2; // Corrected to accurately reflect the center
+            const centerY = window.innerHeight / 2;
+            const deltaX = (e.clientX - centerX) * 0.01; 
+            const deltaY = (e.clientY - centerY) * 0.01; 
+
+            parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+            });
         }
-      });
     });
     </script>
     
