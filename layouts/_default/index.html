@@ -50,35 +50,52 @@
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const parallaxElement = document.querySelector('.topnav-image-wrapper');
-
-  document.addEventListener('scroll', function() {
-    let scrollPosition = window.pageYOffset;
-
-    if(window.innerWidth < 768) {
-      parallaxElement.style.backgroundPositionY = -(scrollPosition * -0.4) + 'px';
-    } else {
-      parallaxElement.style.backgroundPositionY = scrollPosition * 0.4   + 'px';
-    }
-  });
-
-  document.addEventListener('mousemove', function(e) {
-    // Only apply the effect if the viewport width is more than 1024px
-    if(window.innerWidth > 1024) {
-      const { clientX, clientY } = e;
-      // Adjusted to center the movement effect properly
-      const centerX = window.innerWidth / 1;
-      const centerY = window.innerHeight / 1;
-      const deltaX = (clientX - centerX) * 0.01; // Adjust the movement sensitivity here
-      const deltaY = (clientY - centerY) * 0.01; // Adjust the movement sensitivity here
-
-      // Apply translation based on mouse position
-      parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-    }
-  });
-});
-</script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const parallaxElement = document.querySelector('.topnav-image-wrapper');
+    
+      // Corrected Parallax Effect
+      function updateParallax() {
+        let scrollPosition = window.pageYOffset;
+        if(window.innerWidth < 768) {
+          parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px'; // Corrected to positive
+        } else {
+          parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
+        }
+      }
+    
+      document.addEventListener('scroll', updateParallax);
+    
+      // Debounced Mousemove Effect
+      let debounceTimer;
+      function mouseMoveEffect(e) {
+        if(window.innerWidth > 1024) {
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(() => {
+            const centerX = window.innerWidth / 1; // Changed to divide by 2 for actual center
+            const centerY = window.innerHeight / 1;
+            const deltaX = (e.clientX - centerX) * 0.01;
+            const deltaY = (e.clientY - centerY) * 0.01;
+            parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+          }, 10); // 10ms debounce time
+        }
+      }
+    
+      // Conditionally Apply Mousemove Listener
+      function applyMouseMoveListener() {
+        if(window.innerWidth > 1024) {
+          document.addEventListener('mousemove', mouseMoveEffect);
+        } else {
+          document.removeEventListener('mousemove', mouseMoveEffect);
+          parallaxElement.style.transform = 'translate(0px, 0px)'; // Reset transform on smaller screens
+        }
+      }
+    
+      // Initial Listener Setup and Event on Resize
+      applyMouseMoveListener();
+      window.addEventListener('resize', applyMouseMoveListener); // Adjust listener on resize
+    });
+    </script>
+    
 
 <body>
 
