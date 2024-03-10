@@ -275,6 +275,7 @@ body {
 
   .topnav-image-wrapper {
     background-size: cover;
+    background-attachment: local;
   }
 
   .om-richters-wrapper,
