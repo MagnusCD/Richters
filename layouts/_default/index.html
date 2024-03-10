@@ -51,18 +51,38 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const parallaxElement = document.querySelector('.topnav-image-wrapper');
-    
-      document.addEventListener('scroll', function() {
-        let scrollPosition = window.pageYOffset;
-    
-        // Adjusts the speed of the parallax effect based on viewport width
-        if(window.innerWidth < 768) {
-          parallaxElement.style.backgroundPositionY = scrollPosition * 0.2 + 'px';
-        } else {
-          parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
-        }
-      });
+  const parallaxElement = document.querySelector('.topnav-image-wrapper');
+  let lastScrollPosition = 0;
+  let ticking = false;
+
+  function applyParallax() {
+    const speed = 0.4; // Control the parallax effect speed
+    const yPos = lastScrollPosition * speed;
+    parallaxElement.style.backgroundPosition = `center ${yPos}px`;
+  }
+
+  function requestTick() {
+    if (!ticking) {
+      requestAnimationFrame(updateParallax);
+    }
+    ticking = true;
+  }
+
+  function updateParallax() {
+    applyParallax();
+    ticking = false;
+  }
+
+  document.addEventListener('scroll', function() {
+    lastScrollPosition = window.pageYOffset;
+    requestTick();
+  });
+
+  // Optional: Disable parallax on smaller screens to improve performance
+  if (window.innerWidth < 768) {
+    window.removeEventListener('scroll', updateParallax);
+    parallaxElement.style.backgroundPosition = 'center'; // Reset background position
+  }
     
       document.addEventListener('mousemove', function(e) {
         // Applies the mouse move effect globally, without viewport width restriction.
