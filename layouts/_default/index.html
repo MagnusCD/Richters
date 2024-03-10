@@ -51,45 +51,27 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-  const parallaxElement = document.querySelector('.topnav-image-wrapper');
-  let lastScrollPosition = 0;
-  let ticking = false;
-
-  function applyParallax() {
-    const speed = 0.4; // Control the parallax effect speed
-    const yPos = lastScrollPosition * speed;
-    parallaxElement.style.backgroundPosition = `center ${yPos}px`;
-  }
-
-  function requestTick() {
-    if (!ticking) {
-      requestAnimationFrame(updateParallax);
-    }
-    ticking = true;
-  }
-
-  function updateParallax() {
-    applyParallax();
-    ticking = false;
-  }
-
-  document.addEventListener('scroll', function() {
-    lastScrollPosition = window.pageYOffset;
-    requestTick();
-  });
-
-
+      const parallaxElement = document.querySelector('.topnav-image-wrapper');
+    
+      document.addEventListener('scroll', function() {
+        let scrollPosition = window.pageYOffset;
+    
+        if(window.innerWidth < 768) {
+          parallaxElement.style.backgroundPositionY = scrollPosition * 0.2 + 'px';
+        } else {
+          parallaxElement.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
+        }
+      });
     
       document.addEventListener('mousemove', function(e) {
-        // Applies the mouse move effect globally, without viewport width restriction.
-        // Consider adding a condition if you want to limit this effect to wider screens.
+     
         const { clientX, clientY } = e;
-        // These calculations place the origin in the center of the viewport.
+        
         const centerX = window.innerWidth / 1;
         const centerY = window.innerHeight / 1;
-        // Adjusting the calculation for the center
-        const deltaX = (clientX - centerX) * 0.01; // Adjust the movement sensitivity here
-        const deltaY = (clientY - centerY) * 0.01; // Adjust the movement sensitivity here
+       
+        const deltaX = (clientX - centerX) * 0.01; 
+        const deltaY = (clientY - centerY) * 0.01; 
     
         parallaxElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
       });
