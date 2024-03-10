@@ -13,7 +13,7 @@ body {
 
  
   background: rgb(242,175,71);
-  
+  margin-bottom: 100px;
   background-image: url("/images/richters-hero-image.webp");
   background-position: center;
   width: 101%;
