@@ -150,7 +150,9 @@
   margin: 0 auto;
 }
 
-.single-post-container .entry-content p {
+.single-post-container .entry-content p,
+.single-post-container .post-meta
+{
   width: 95%;
   margin: 0 auto;
   padding: 10px;
